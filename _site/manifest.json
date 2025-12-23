@@ -1,0 +1,589 @@
+{
+  "source_base_path": "C:/Users/ROCK/source/repos/ASE-BOOSE-DOC",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppArray",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppArray.yml\" sourcestartlinenumber=\"1\">Represents an application-defined array variable/command that can store either integer or real values.\nThis class acts as both the &quot;array&quot; declaration command and the stored variable instance in the program.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppAssign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppAssign.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppAssign",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppAssign.yml\" sourcestartlinenumber=\"1\">Represents a runtime assignment command that updates an existing variable\nby evaluating an expression at execution time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppBoolean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppBoolean.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppBoolean",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppBoolean.yml\" sourcestartlinenumber=\"1\">Represents an application-defined boolean variable/command.\nInherits from <xref href=\"BOOSE.Evaluation\" data-throw-if-not-resolved=\"false\"></xref> so it can be stored as a variable and used in expressions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppCall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppCall.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppCall",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppCall.yml\" sourcestartlinenumber=\"1\">Represents the <code>call</code> command, which invokes a user-defined method.\nIt evaluates argument expressions, assigns them to the method's parameter variables,\nstores a return address, and transfers execution to the method body.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppCanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppCanvas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppCanvas",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppCanvas.yml\" sourcestartlinenumber=\"1\">Represents a drawable canvas used in the Boose application.\nProvides methods to draw shapes, set pen properties, and manage drawing state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppCircle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppCircle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppCircle",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppCircle.yml\" sourcestartlinenumber=\"1\">Represents a command that draws a circle on the canvas.\nEvaluates the supplied parameter at runtime and uses it as the circle radius.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppCommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppCommandFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppCommandFactory",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Factory class responsible for creating instances of application-specific commands.\nInherits from <xref href=\"BOOSE.CommandFactory\" data-throw-if-not-resolved=\"false\"></xref> and overrides the <xref href=\"Booseapp.AppCommandFactory.MakeCommand(System.String)\" data-throw-if-not-resolved=\"false\"></xref> method\nto return corresponding command objects based on the command name.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppElse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppElse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppElse",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppElse.yml\" sourcestartlinenumber=\"1\">Represents the <code>else</code> part of an <code>if</code>/<code>else</code> block.\nThis is a compound command that links to the corresponding <code>if</code> and the final <code>end</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppEnd",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppEnd.yml\" sourcestartlinenumber=\"1\">Represents the <code>end</code> marker command used to close compound blocks such as\n<code>if</code>, <code>else</code>, <code>for</code>, <code>while</code>, and <code>method</code>.\nDuring compilation it links the corresponding opening command to its end line.\nDuring execution it performs any required control-flow (looping or method return).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppFor",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppFor.yml\" sourcestartlinenumber=\"1\">Represents a <code>for</code> loop command.\nParses loop syntax, initialises the loop variable, evaluates range/step,\nand controls program flow until the corresponding <code>end for</code> is reached.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppIf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppIf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppIf",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppIf.yml\" sourcestartlinenumber=\"1\">Represents an <code>if</code> conditional command.\nEvaluates a boolean expression and controls program flow by jumping to the matching\n<code>else</code> or <code>end if</code> marker when the condition is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppInt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppInt",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppInt.yml\" sourcestartlinenumber=\"1\">Represents an application-defined integer variable/command.\nInherits from <xref href=\"BOOSE.Evaluation\" data-throw-if-not-resolved=\"false\"></xref> so it can be declared, stored, and used in expressions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppMethod",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppMethod.yml\" sourcestartlinenumber=\"1\">Represents a user-defined method declaration command.\nA method defines a return variable, optional typed parameters, and a body that is executed via <code>call</code>.\nWhen encountered during normal execution flow, the method body is skipped.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppMoveto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppMoveto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppMoveto",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppMoveto.yml\" sourcestartlinenumber=\"1\">Represents a command that moves the pen to a specified position on the canvas.\nInherits from <xref href=\"BOOSE.CommandTwoParameters\" data-throw-if-not-resolved=\"false\"></xref> and requires two integer parameters (X and Y coordinates).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppParser",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppParser.yml\" sourcestartlinenumber=\"1\">Application-specific parser that extends the BOOSE <xref href=\"BOOSE.Parser\" data-throw-if-not-resolved=\"false\"></xref> to support\nruntime assignment handling and special-case parsing needed by the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppPeek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppPeek.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppPeek",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppPeek.yml\" sourcestartlinenumber=\"1\">Represents the <code>peek</code> command, which reads a value from an array element\nand stores it into a destination variable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppPoke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppPoke.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppPoke",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppPoke.yml\" sourcestartlinenumber=\"1\">Represents the <code>poke</code> command, which writes a value into an array element.\nSupports both integer and real arrays and allows row/column indices to be expressions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppReal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppReal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppReal",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppReal.yml\" sourcestartlinenumber=\"1\">Represents an application-defined real (double) variable/command.\nInherits from <xref href=\"BOOSE.Evaluation\" data-throw-if-not-resolved=\"false\"></xref> so it can be declared, stored, and used in expressions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppRect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppRect",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppRect.yml\" sourcestartlinenumber=\"1\">Represents a command that draws a rectangle on the canvas.\nInherits from <xref href=\"BOOSE.CommandTwoParameters\" data-throw-if-not-resolved=\"false\"></xref> and requires two integer parameters (width and height).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppSet",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppSet.yml\" sourcestartlinenumber=\"1\">Represents the <code>set</code> command, which assigns the result of an expression to an existing variable at runtime.\nSupports integer, real, and boolean variables.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppStoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppStoredProgram.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppStoredProgram",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppStoredProgram.yml\" sourcestartlinenumber=\"1\">Application-specific implementation of <xref href=\"BOOSE.StoredProgram\" data-throw-if-not-resolved=\"false\"></xref>.\nAdds method support (register/call/return) and provides overrides for updating and\nretrieving application variable types (real/boolean) as well as expression evaluation cleanup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppWhile",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppWhile.yml\" sourcestartlinenumber=\"1\">Represents a <code>while</code> loop command.\nEvaluates a boolean expression and controls program flow by exiting the loop\nwhen the condition becomes false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.AppWrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.AppWrite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.AppWrite",
+      "Summary": "<p sourcefile=\"api/Booseapp.AppWrite.yml\" sourcestartlinenumber=\"1\">Represents the <code>write</code> command, which evaluates an expression (including string expressions)\nand writes the resulting text to the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.CanvasException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.CanvasException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.CanvasException",
+      "Summary": "<p sourcefile=\"api/Booseapp.CanvasException.yml\" sourcestartlinenumber=\"1\">Represents errors that occur during canvas operations such as drawing or rendering.\nInherits from the base <xref href=\"System.Exception\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp.Form1",
+      "Summary": "<p sourcefile=\"api/Booseapp.Form1.yml\" sourcestartlinenumber=\"1\">Represents the main form of the Boose application.\nHandles initialization, user interactions, and drawing operations on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppArrayTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppArrayTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppArrayTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppArrayTests.yml\" sourcestartlinenumber=\"1\">Unit tests for array-related commands/behaviour in the BOOSE application layer:\nverifies correct poke/peek operations for int and real arrays, and validates\nout-of-bounds access throws the expected exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppBooleanTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppBooleanTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppBooleanTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppBooleanTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Booseapp.AppBoolean\" data-throw-if-not-resolved=\"false\"></xref> command/variable handling:\nverifies boolean variables are created on compile, valid values are set correctly,\nand invalid boolean assignments are rejected with the expected exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppForTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppForTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppForTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppForTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Booseapp.AppFor\" data-throw-if-not-resolved=\"false\"></xref> command:\nverifies initial execution sets the loop variable correctly and that subsequent\niterations increment the loop variable as expected.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppIfTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppIfTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppIfTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppIfTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Booseapp.AppIf\" data-throw-if-not-resolved=\"false\"></xref> command:\nverifies that when the IF condition evaluates to true, execution does not jump\nto the end of the IF block and the condition state is set correctly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppIntTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppIntTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppIntTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppIntTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Booseapp.AppInt\" data-throw-if-not-resolved=\"false\"></xref> command/variable handling:\nverifies integer variables are created on compile, valid integer values (including negatives)\nare set correctly, and non-integer values are rejected with the expected exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppMethodTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppMethodTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppMethodTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppMethodTests.yml\" sourcestartlinenumber=\"1\">Unit tests for BOOSE method support (definition/parsing/compilation):\nverifies that a method definition compiles successfully, creates the expected\nreturn and parameter variables, and (optionally) that the method is registered\nwithin the program/method registry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppRealTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppRealTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppRealTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppRealTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Booseapp.AppReal\" data-throw-if-not-resolved=\"false\"></xref> command/variable handling:\nverifies real variables are created on compile, numeric values are stored correctly\n(including integers assigned to reals), and non-numeric assignments are rejected.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.AppWhileTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.AppWhileTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.AppWhileTests",
+      "Summary": "<p sourcefile=\"api/Booseapptest.AppWhileTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Booseapp.AppWhile\" data-throw-if-not-resolved=\"false\"></xref> command:\nverifies that when the WHILE condition evaluates to true, execution does not jump\nto the end of the loop and the condition state is set correctly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.Test1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.Test1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest.Test1",
+      "Summary": "<p sourcefile=\"api/Booseapptest.Test1.yml\" sourcestartlinenumber=\"1\">Contains unit tests for verifying the functionality of the <xref href=\"Booseapp.AppCanvas\" data-throw-if-not-resolved=\"false\"></xref> class,\nincluding MoveTo, DrawTo, and multi-line program behavior.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Booseapptest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Booseapptest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Booseapptest",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/Index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/Index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Redirection",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

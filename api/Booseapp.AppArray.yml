@@ -1,0 +1,1225 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booseapp.AppArray
+  commentId: T:Booseapp.AppArray
+  id: AppArray
+  parent: Booseapp
+  children:
+  - Booseapp.AppArray.BoundsCheck(System.Int32,System.Int32)
+  - Booseapp.AppArray.Cols
+  - Booseapp.AppArray.Compile
+  - Booseapp.AppArray.ElementType
+  - Booseapp.AppArray.Execute
+  - Booseapp.AppArray.PeekInt(System.Int32,System.Int32)
+  - Booseapp.AppArray.PeekReal(System.Int32,System.Int32)
+  - Booseapp.AppArray.PokeInt(System.Int32,System.Int32,System.Int32)
+  - Booseapp.AppArray.PokeReal(System.Int32,System.Int32,System.Double)
+  - Booseapp.AppArray.Rows
+  - Booseapp.AppArray.Set(BOOSE.StoredProgram,System.String)
+  - Booseapp.AppArray.Value
+  langs:
+  - csharp
+  - vb
+  name: AppArray
+  nameWithType: AppArray
+  fullName: Booseapp.AppArray
+  type: Class
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppArray
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 9
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Represents an application-defined array variable/command that can store either integer or real values.
+
+    This class acts as both the "array" declaration command and the stored variable instance in the program.
+  example: []
+  syntax:
+    content: 'public class AppArray : Evaluation, ICommand'
+    content.vb: Public Class AppArray Inherits Evaluation Implements ICommand
+  inheritance:
+  - System.Object
+  - BOOSE.Command
+  - BOOSE.Evaluation
+  implements:
+  - BOOSE.ICommand
+  inheritedMembers:
+  - BOOSE.Evaluation.expression
+  - BOOSE.Evaluation.evaluatedExpression
+  - BOOSE.Evaluation.varName
+  - BOOSE.Evaluation.value
+  - BOOSE.Evaluation.CheckParameters(System.String[])
+  - BOOSE.Evaluation.ProcessExpression(System.String)
+  - BOOSE.Evaluation.Expression
+  - BOOSE.Evaluation.VarName
+  - BOOSE.Evaluation.Local
+  - BOOSE.Command.IsDouble
+  - BOOSE.Command.program
+  - BOOSE.Command.parameterList
+  - BOOSE.Command.parameters
+  - BOOSE.Command.paramsint
+  - BOOSE.Command.ProcessParameters(System.String)
+  - BOOSE.Command.ToString
+  - BOOSE.Command.Program
+  - BOOSE.Command.Name
+  - BOOSE.Command.ParameterList
+  - BOOSE.Command.Parameters
+  - BOOSE.Command.Paramsint
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Booseapp.AppArray.ElementType
+  commentId: P:Booseapp.AppArray.ElementType
+  id: ElementType
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  nameWithType: AppArray.ElementType
+  fullName: Booseapp.AppArray.ElementType
+  type: Property
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: ElementType
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 14
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Gets the element type of the array ("int" or "real").
+  example: []
+  syntax:
+    content: public string ElementType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ElementType As String
+  overload: Booseapp.AppArray.ElementType*
+- uid: Booseapp.AppArray.Rows
+  commentId: P:Booseapp.AppArray.Rows
+  id: Rows
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: Rows
+  nameWithType: AppArray.Rows
+  fullName: Booseapp.AppArray.Rows
+  type: Property
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Rows
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 19
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Gets the number of rows in the array.
+  example: []
+  syntax:
+    content: public int Rows { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Rows As Integer
+  overload: Booseapp.AppArray.Rows*
+- uid: Booseapp.AppArray.Cols
+  commentId: P:Booseapp.AppArray.Cols
+  id: Cols
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: Cols
+  nameWithType: AppArray.Cols
+  fullName: Booseapp.AppArray.Cols
+  type: Property
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Cols
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 24
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Gets the number of columns in the array (defaults to 1 for 1D arrays).
+  example: []
+  syntax:
+    content: public int Cols { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Cols As Integer
+  overload: Booseapp.AppArray.Cols*
+- uid: Booseapp.AppArray.Value
+  commentId: P:Booseapp.AppArray.Value
+  id: Value
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: AppArray.Value
+  fullName: Booseapp.AppArray.Value
+  type: Property
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Value
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 33
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Gets or sets the scalar value for this evaluation.
+
+    Arrays do not have a single scalar value, so this property is not used.
+  example: []
+  syntax:
+    content: public override int Value { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Property Value As Integer
+  overridden: BOOSE.Evaluation.Value
+  overload: Booseapp.AppArray.Value*
+- uid: Booseapp.AppArray.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:Booseapp.AppArray.Set(BOOSE.StoredProgram,System.String)
+  id: Set(BOOSE.StoredProgram,System.String)
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: Set(StoredProgram, string)
+  nameWithType: AppArray.Set(StoredProgram, string)
+  fullName: Booseapp.AppArray.Set(BOOSE.StoredProgram, string)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Set
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 49
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Sets the command parameters for the array declaration.
+
+    Expected formats:
+
+    <code>int name rows</code> or <code>int name rows cols</code> (commas are permitted between dimensions).
+  example: []
+  syntax:
+    content: public override void Set(StoredProgram program, string param)
+    parameters:
+    - id: program
+      type: BOOSE.StoredProgram
+      description: The stored program that owns this variable/command.
+    - id: param
+      type: System.String
+      description: The raw parameter string following the "array" keyword.
+    content.vb: Public Overrides Sub [Set](program As StoredProgram, param As String)
+  overridden: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  overload: Booseapp.AppArray.Set*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown when the syntax is invalid, the type is not supported, or the dimensions are not positive integers.
+  nameWithType.vb: AppArray.Set(StoredProgram, String)
+  fullName.vb: Booseapp.AppArray.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+- uid: Booseapp.AppArray.Compile
+  commentId: M:Booseapp.AppArray.Compile
+  id: Compile
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: AppArray.Compile()
+  fullName: Booseapp.AppArray.Compile()
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Compile
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 85
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Compiles the array declaration by registering the variable in the program and allocating storage.
+  example: []
+  syntax:
+    content: public override void Compile()
+    content.vb: Public Overrides Sub Compile()
+  overridden: BOOSE.Evaluation.Compile
+  overload: Booseapp.AppArray.Compile*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown if a variable with the same name already exists.
+- uid: Booseapp.AppArray.Execute
+  commentId: M:Booseapp.AppArray.Execute
+  id: Execute
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AppArray.Execute()
+  fullName: Booseapp.AppArray.Execute()
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Execute
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 101
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Executes the array declaration. No runtime action is required after compilation.
+  example: []
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: BOOSE.Evaluation.Execute
+  overload: Booseapp.AppArray.Execute*
+- uid: Booseapp.AppArray.BoundsCheck(System.Int32,System.Int32)
+  commentId: M:Booseapp.AppArray.BoundsCheck(System.Int32,System.Int32)
+  id: BoundsCheck(System.Int32,System.Int32)
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: BoundsCheck(int, int)
+  nameWithType: AppArray.BoundsCheck(int, int)
+  fullName: Booseapp.AppArray.BoundsCheck(int, int)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: BoundsCheck
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 111
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Validates that the provided row and column indices are within bounds.
+  example: []
+  syntax:
+    content: public void BoundsCheck(int r, int c)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The zero-based row index.
+    - id: c
+      type: System.Int32
+      description: The zero-based column index.
+    content.vb: Public Sub BoundsCheck(r As Integer, c As Integer)
+  overload: Booseapp.AppArray.BoundsCheck*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown when the indices are out of bounds.
+  nameWithType.vb: AppArray.BoundsCheck(Integer, Integer)
+  fullName.vb: Booseapp.AppArray.BoundsCheck(Integer, Integer)
+  name.vb: BoundsCheck(Integer, Integer)
+- uid: Booseapp.AppArray.PokeInt(System.Int32,System.Int32,System.Int32)
+  commentId: M:Booseapp.AppArray.PokeInt(System.Int32,System.Int32,System.Int32)
+  id: PokeInt(System.Int32,System.Int32,System.Int32)
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: PokeInt(int, int, int)
+  nameWithType: AppArray.PokeInt(int, int, int)
+  fullName: Booseapp.AppArray.PokeInt(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: PokeInt
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 126
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Stores an integer value at the specified position.
+  example: []
+  syntax:
+    content: public void PokeInt(int r, int c, int v)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The zero-based row index.
+    - id: c
+      type: System.Int32
+      description: The zero-based column index.
+    - id: v
+      type: System.Int32
+      description: The integer value to store.
+    content.vb: Public Sub PokeInt(r As Integer, c As Integer, v As Integer)
+  overload: Booseapp.AppArray.PokeInt*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown if the array element type is not integer or the indices are out of bounds.
+  nameWithType.vb: AppArray.PokeInt(Integer, Integer, Integer)
+  fullName.vb: Booseapp.AppArray.PokeInt(Integer, Integer, Integer)
+  name.vb: PokeInt(Integer, Integer, Integer)
+- uid: Booseapp.AppArray.PeekInt(System.Int32,System.Int32)
+  commentId: M:Booseapp.AppArray.PeekInt(System.Int32,System.Int32)
+  id: PeekInt(System.Int32,System.Int32)
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: PeekInt(int, int)
+  nameWithType: AppArray.PeekInt(int, int)
+  fullName: Booseapp.AppArray.PeekInt(int, int)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: PeekInt
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 142
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Retrieves an integer value from the specified position.
+  example: []
+  syntax:
+    content: public int PeekInt(int r, int c)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The zero-based row index.
+    - id: c
+      type: System.Int32
+      description: The zero-based column index.
+    return:
+      type: System.Int32
+      description: The integer value stored at the given indices.
+    content.vb: Public Function PeekInt(r As Integer, c As Integer) As Integer
+  overload: Booseapp.AppArray.PeekInt*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown if the array element type is not integer or the indices are out of bounds.
+  nameWithType.vb: AppArray.PeekInt(Integer, Integer)
+  fullName.vb: Booseapp.AppArray.PeekInt(Integer, Integer)
+  name.vb: PeekInt(Integer, Integer)
+- uid: Booseapp.AppArray.PokeReal(System.Int32,System.Int32,System.Double)
+  commentId: M:Booseapp.AppArray.PokeReal(System.Int32,System.Int32,System.Double)
+  id: PokeReal(System.Int32,System.Int32,System.Double)
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: PokeReal(int, int, double)
+  nameWithType: AppArray.PokeReal(int, int, double)
+  fullName: Booseapp.AppArray.PokeReal(int, int, double)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: PokeReal
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 158
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Stores a real (double) value at the specified position.
+  example: []
+  syntax:
+    content: public void PokeReal(int r, int c, double v)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The zero-based row index.
+    - id: c
+      type: System.Int32
+      description: The zero-based column index.
+    - id: v
+      type: System.Double
+      description: The real value to store.
+    content.vb: Public Sub PokeReal(r As Integer, c As Integer, v As Double)
+  overload: Booseapp.AppArray.PokeReal*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown if the array element type is not real or the indices are out of bounds.
+  nameWithType.vb: AppArray.PokeReal(Integer, Integer, Double)
+  fullName.vb: Booseapp.AppArray.PokeReal(Integer, Integer, Double)
+  name.vb: PokeReal(Integer, Integer, Double)
+- uid: Booseapp.AppArray.PeekReal(System.Int32,System.Int32)
+  commentId: M:Booseapp.AppArray.PeekReal(System.Int32,System.Int32)
+  id: PeekReal(System.Int32,System.Int32)
+  parent: Booseapp.AppArray
+  langs:
+  - csharp
+  - vb
+  name: PeekReal(int, int)
+  nameWithType: AppArray.PeekReal(int, int)
+  fullName: Booseapp.AppArray.PeekReal(int, int)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppArray.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: PeekReal
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppArray.cs
+    startLine: 174
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Retrieves a real (double) value from the specified position.
+  example: []
+  syntax:
+    content: public double PeekReal(int r, int c)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The zero-based row index.
+    - id: c
+      type: System.Int32
+      description: The zero-based column index.
+    return:
+      type: System.Double
+      description: The real value stored at the given indices.
+    content.vb: Public Function PeekReal(r As Integer, c As Integer) As Double
+  overload: Booseapp.AppArray.PeekReal*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown if the array element type is not real or the indices are out of bounds.
+  nameWithType.vb: AppArray.PeekReal(Integer, Integer)
+  fullName.vb: Booseapp.AppArray.PeekReal(Integer, Integer)
+  name.vb: PeekReal(Integer, Integer)
+references:
+- uid: Booseapp
+  commentId: N:Booseapp
+  href: Booseapp.html
+  name: Booseapp
+  nameWithType: Booseapp
+  fullName: Booseapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.Command
+  commentId: T:BOOSE.Command
+  parent: BOOSE
+  isExternal: true
+  name: Command
+  nameWithType: Command
+  fullName: BOOSE.Command
+- uid: BOOSE.Evaluation
+  commentId: T:BOOSE.Evaluation
+  parent: BOOSE
+  isExternal: true
+  name: Evaluation
+  nameWithType: Evaluation
+  fullName: BOOSE.Evaluation
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: BOOSE.Evaluation.expression
+  commentId: F:BOOSE.Evaluation.expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: expression
+  nameWithType: Evaluation.expression
+  fullName: BOOSE.Evaluation.expression
+- uid: BOOSE.Evaluation.evaluatedExpression
+  commentId: F:BOOSE.Evaluation.evaluatedExpression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: evaluatedExpression
+  nameWithType: Evaluation.evaluatedExpression
+  fullName: BOOSE.Evaluation.evaluatedExpression
+- uid: BOOSE.Evaluation.varName
+  commentId: F:BOOSE.Evaluation.varName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: varName
+  nameWithType: Evaluation.varName
+  fullName: BOOSE.Evaluation.varName
+- uid: BOOSE.Evaluation.value
+  commentId: F:BOOSE.Evaluation.value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: value
+  nameWithType: Evaluation.value
+  fullName: BOOSE.Evaluation.value
+- uid: BOOSE.Evaluation.CheckParameters(System.String[])
+  commentId: M:BOOSE.Evaluation.CheckParameters(System.String[])
+  parent: BOOSE.Evaluation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CheckParameters(string[])
+  nameWithType: Evaluation.CheckParameters(string[])
+  fullName: BOOSE.Evaluation.CheckParameters(string[])
+  nameWithType.vb: Evaluation.CheckParameters(String())
+  fullName.vb: BOOSE.Evaluation.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: BOOSE.Evaluation.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: BOOSE.Evaluation.ProcessExpression(System.String)
+  commentId: M:BOOSE.Evaluation.ProcessExpression(System.String)
+  parent: BOOSE.Evaluation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessExpression(string)
+  nameWithType: Evaluation.ProcessExpression(string)
+  fullName: BOOSE.Evaluation.ProcessExpression(string)
+  nameWithType.vb: Evaluation.ProcessExpression(String)
+  fullName.vb: BOOSE.Evaluation.ProcessExpression(String)
+  name.vb: ProcessExpression(String)
+  spec.csharp:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Evaluation.Expression
+  commentId: P:BOOSE.Evaluation.Expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Expression
+  nameWithType: Evaluation.Expression
+  fullName: BOOSE.Evaluation.Expression
+- uid: BOOSE.Evaluation.VarName
+  commentId: P:BOOSE.Evaluation.VarName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: VarName
+  nameWithType: Evaluation.VarName
+  fullName: BOOSE.Evaluation.VarName
+- uid: BOOSE.Evaluation.Local
+  commentId: P:BOOSE.Evaluation.Local
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Local
+  nameWithType: Evaluation.Local
+  fullName: BOOSE.Evaluation.Local
+- uid: BOOSE.Command.IsDouble
+  commentId: F:BOOSE.Command.IsDouble
+  parent: BOOSE.Command
+  isExternal: true
+  name: IsDouble
+  nameWithType: Command.IsDouble
+  fullName: BOOSE.Command.IsDouble
+- uid: BOOSE.Command.program
+  commentId: F:BOOSE.Command.program
+  parent: BOOSE.Command
+  isExternal: true
+  name: program
+  nameWithType: Command.program
+  fullName: BOOSE.Command.program
+- uid: BOOSE.Command.parameterList
+  commentId: F:BOOSE.Command.parameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameterList
+  nameWithType: Command.parameterList
+  fullName: BOOSE.Command.parameterList
+- uid: BOOSE.Command.parameters
+  commentId: F:BOOSE.Command.parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameters
+  nameWithType: Command.parameters
+  fullName: BOOSE.Command.parameters
+- uid: BOOSE.Command.paramsint
+  commentId: F:BOOSE.Command.paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: paramsint
+  nameWithType: Command.paramsint
+  fullName: BOOSE.Command.paramsint
+- uid: BOOSE.Command.ProcessParameters(System.String)
+  commentId: M:BOOSE.Command.ProcessParameters(System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessParameters(string)
+  nameWithType: Command.ProcessParameters(string)
+  fullName: BOOSE.Command.ProcessParameters(string)
+  nameWithType.vb: Command.ProcessParameters(String)
+  fullName.vb: BOOSE.Command.ProcessParameters(String)
+  name.vb: ProcessParameters(String)
+  spec.csharp:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Command.ToString
+  commentId: M:BOOSE.Command.ToString
+  parent: BOOSE.Command
+  isExternal: true
+  name: ToString()
+  nameWithType: Command.ToString()
+  fullName: BOOSE.Command.ToString()
+  spec.csharp:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.Command.Program
+  commentId: P:BOOSE.Command.Program
+  parent: BOOSE.Command
+  isExternal: true
+  name: Program
+  nameWithType: Command.Program
+  fullName: BOOSE.Command.Program
+- uid: BOOSE.Command.Name
+  commentId: P:BOOSE.Command.Name
+  parent: BOOSE.Command
+  isExternal: true
+  name: Name
+  nameWithType: Command.Name
+  fullName: BOOSE.Command.Name
+- uid: BOOSE.Command.ParameterList
+  commentId: P:BOOSE.Command.ParameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: ParameterList
+  nameWithType: Command.ParameterList
+  fullName: BOOSE.Command.ParameterList
+- uid: BOOSE.Command.Parameters
+  commentId: P:BOOSE.Command.Parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: Parameters
+  nameWithType: Command.Parameters
+  fullName: BOOSE.Command.Parameters
+- uid: BOOSE.Command.Paramsint
+  commentId: P:BOOSE.Command.Paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: Paramsint
+  nameWithType: Command.Paramsint
+  fullName: BOOSE.Command.Paramsint
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: Booseapp.AppArray.ElementType*
+  commentId: Overload:Booseapp.AppArray.ElementType
+  href: Booseapp.AppArray.html#Booseapp_AppArray_ElementType
+  name: ElementType
+  nameWithType: AppArray.ElementType
+  fullName: Booseapp.AppArray.ElementType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Booseapp.AppArray.Rows*
+  commentId: Overload:Booseapp.AppArray.Rows
+  href: Booseapp.AppArray.html#Booseapp_AppArray_Rows
+  name: Rows
+  nameWithType: AppArray.Rows
+  fullName: Booseapp.AppArray.Rows
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Booseapp.AppArray.Cols*
+  commentId: Overload:Booseapp.AppArray.Cols
+  href: Booseapp.AppArray.html#Booseapp_AppArray_Cols
+  name: Cols
+  nameWithType: AppArray.Cols
+  fullName: Booseapp.AppArray.Cols
+- uid: BOOSE.Evaluation.Value
+  commentId: P:BOOSE.Evaluation.Value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Value
+  nameWithType: Evaluation.Value
+  fullName: BOOSE.Evaluation.Value
+- uid: Booseapp.AppArray.Value*
+  commentId: Overload:Booseapp.AppArray.Value
+  href: Booseapp.AppArray.html#Booseapp_AppArray_Value
+  name: Value
+  nameWithType: AppArray.Value
+  fullName: Booseapp.AppArray.Value
+- uid: BOOSE.CommandException
+  commentId: T:BOOSE.CommandException
+  isExternal: true
+  name: CommandException
+  nameWithType: CommandException
+  fullName: BOOSE.CommandException
+- uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Set(StoredProgram, string)
+  nameWithType: Command.Set(StoredProgram, string)
+  fullName: BOOSE.Command.Set(BOOSE.StoredProgram, string)
+  nameWithType.vb: Command.Set(StoredProgram, String)
+  fullName.vb: BOOSE.Command.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+  spec.csharp:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Booseapp.AppArray.Set*
+  commentId: Overload:Booseapp.AppArray.Set
+  href: Booseapp.AppArray.html#Booseapp_AppArray_Set_BOOSE_StoredProgram_System_String_
+  name: Set
+  nameWithType: AppArray.Set
+  fullName: Booseapp.AppArray.Set
+- uid: BOOSE.StoredProgram
+  commentId: T:BOOSE.StoredProgram
+  parent: BOOSE
+  isExternal: true
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: BOOSE.StoredProgram
+- uid: BOOSE.Evaluation.Compile
+  commentId: M:BOOSE.Evaluation.Compile
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Compile()
+  nameWithType: Evaluation.Compile()
+  fullName: BOOSE.Evaluation.Compile()
+  spec.csharp:
+  - uid: BOOSE.Evaluation.Compile
+    name: Compile
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.Compile
+    name: Compile
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Booseapp.AppArray.Compile*
+  commentId: Overload:Booseapp.AppArray.Compile
+  href: Booseapp.AppArray.html#Booseapp_AppArray_Compile
+  name: Compile
+  nameWithType: AppArray.Compile
+  fullName: Booseapp.AppArray.Compile
+- uid: BOOSE.Evaluation.Execute
+  commentId: M:BOOSE.Evaluation.Execute
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Execute()
+  nameWithType: Evaluation.Execute()
+  fullName: BOOSE.Evaluation.Execute()
+  spec.csharp:
+  - uid: BOOSE.Evaluation.Execute
+    name: Execute
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.Execute
+    name: Execute
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Booseapp.AppArray.Execute*
+  commentId: Overload:Booseapp.AppArray.Execute
+  href: Booseapp.AppArray.html#Booseapp_AppArray_Execute
+  name: Execute
+  nameWithType: AppArray.Execute
+  fullName: Booseapp.AppArray.Execute
+- uid: Booseapp.AppArray.BoundsCheck*
+  commentId: Overload:Booseapp.AppArray.BoundsCheck
+  href: Booseapp.AppArray.html#Booseapp_AppArray_BoundsCheck_System_Int32_System_Int32_
+  name: BoundsCheck
+  nameWithType: AppArray.BoundsCheck
+  fullName: Booseapp.AppArray.BoundsCheck
+- uid: Booseapp.AppArray.PokeInt*
+  commentId: Overload:Booseapp.AppArray.PokeInt
+  href: Booseapp.AppArray.html#Booseapp_AppArray_PokeInt_System_Int32_System_Int32_System_Int32_
+  name: PokeInt
+  nameWithType: AppArray.PokeInt
+  fullName: Booseapp.AppArray.PokeInt
+- uid: Booseapp.AppArray.PeekInt*
+  commentId: Overload:Booseapp.AppArray.PeekInt
+  href: Booseapp.AppArray.html#Booseapp_AppArray_PeekInt_System_Int32_System_Int32_
+  name: PeekInt
+  nameWithType: AppArray.PeekInt
+  fullName: Booseapp.AppArray.PeekInt
+- uid: Booseapp.AppArray.PokeReal*
+  commentId: Overload:Booseapp.AppArray.PokeReal
+  href: Booseapp.AppArray.html#Booseapp_AppArray_PokeReal_System_Int32_System_Int32_System_Double_
+  name: PokeReal
+  nameWithType: AppArray.PokeReal
+  fullName: Booseapp.AppArray.PokeReal
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Booseapp.AppArray.PeekReal*
+  commentId: Overload:Booseapp.AppArray.PeekReal
+  href: Booseapp.AppArray.html#Booseapp_AppArray_PeekReal_System_Int32_System_Int32_
+  name: PeekReal
+  nameWithType: AppArray.PeekReal
+  fullName: Booseapp.AppArray.PeekReal

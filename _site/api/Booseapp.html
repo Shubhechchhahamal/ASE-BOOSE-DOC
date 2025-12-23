@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Booseapp | ASE-BOOSE-DOC </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Booseapp | ASE-BOOSE-DOC ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE-BOOSE-DOC">
+            ASE-BOOSE-DOC
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Booseapp">
+
+  <h1 id="Booseapp" data-uid="Booseapp" class="text-break">Namespace Booseapp</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppArray.html">AppArray</a></dt>
+      <dd><p>Represents an application-defined array variable/command that can store either integer or real values.
+This class acts as both the &quot;array&quot; declaration command and the stored variable instance in the program.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppAssign.html">AppAssign</a></dt>
+      <dd><p>Represents a runtime assignment command that updates an existing variable
+by evaluating an expression at execution time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppBoolean.html">AppBoolean</a></dt>
+      <dd><p>Represents an application-defined boolean variable/command.
+Inherits from <span class="xref">BOOSE.Evaluation</span> so it can be stored as a variable and used in expressions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppCall.html">AppCall</a></dt>
+      <dd><p>Represents the <code>call</code> command, which invokes a user-defined method.
+It evaluates argument expressions, assigns them to the method's parameter variables,
+stores a return address, and transfers execution to the method body.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppCanvas.html">AppCanvas</a></dt>
+      <dd><p>Represents a drawable canvas used in the Boose application.
+Provides methods to draw shapes, set pen properties, and manage drawing state.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppCircle.html">AppCircle</a></dt>
+      <dd><p>Represents a command that draws a circle on the canvas.
+Evaluates the supplied parameter at runtime and uses it as the circle radius.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppCommandFactory.html">AppCommandFactory</a></dt>
+      <dd><p>Factory class responsible for creating instances of application-specific commands.
+Inherits from <span class="xref">BOOSE.CommandFactory</span> and overrides the <a class="xref" href="Booseapp.AppCommandFactory.html#Booseapp_AppCommandFactory_MakeCommand_System_String_">MakeCommand(string)</a> method
+to return corresponding command objects based on the command name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppElse.html">AppElse</a></dt>
+      <dd><p>Represents the <code>else</code> part of an <code>if</code>/<code>else</code> block.
+This is a compound command that links to the corresponding <code>if</code> and the final <code>end</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppEnd.html">AppEnd</a></dt>
+      <dd><p>Represents the <code>end</code> marker command used to close compound blocks such as
+<code>if</code>, <code>else</code>, <code>for</code>, <code>while</code>, and <code>method</code>.
+During compilation it links the corresponding opening command to its end line.
+During execution it performs any required control-flow (looping or method return).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppFor.html">AppFor</a></dt>
+      <dd><p>Represents a <code>for</code> loop command.
+Parses loop syntax, initialises the loop variable, evaluates range/step,
+and controls program flow until the corresponding <code>end for</code> is reached.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppIf.html">AppIf</a></dt>
+      <dd><p>Represents an <code>if</code> conditional command.
+Evaluates a boolean expression and controls program flow by jumping to the matching
+<code>else</code> or <code>end if</code> marker when the condition is false.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppInt.html">AppInt</a></dt>
+      <dd><p>Represents an application-defined integer variable/command.
+Inherits from <span class="xref">BOOSE.Evaluation</span> so it can be declared, stored, and used in expressions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppMethod.html">AppMethod</a></dt>
+      <dd><p>Represents a user-defined method declaration command.
+A method defines a return variable, optional typed parameters, and a body that is executed via <code>call</code>.
+When encountered during normal execution flow, the method body is skipped.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppMoveto.html">AppMoveto</a></dt>
+      <dd><p>Represents a command that moves the pen to a specified position on the canvas.
+Inherits from <span class="xref">BOOSE.CommandTwoParameters</span> and requires two integer parameters (X and Y coordinates).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppParser.html">AppParser</a></dt>
+      <dd><p>Application-specific parser that extends the BOOSE <span class="xref">BOOSE.Parser</span> to support
+runtime assignment handling and special-case parsing needed by the application.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppPeek.html">AppPeek</a></dt>
+      <dd><p>Represents the <code>peek</code> command, which reads a value from an array element
+and stores it into a destination variable.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppPoke.html">AppPoke</a></dt>
+      <dd><p>Represents the <code>poke</code> command, which writes a value into an array element.
+Supports both integer and real arrays and allows row/column indices to be expressions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppReal.html">AppReal</a></dt>
+      <dd><p>Represents an application-defined real (double) variable/command.
+Inherits from <span class="xref">BOOSE.Evaluation</span> so it can be declared, stored, and used in expressions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppRect.html">AppRect</a></dt>
+      <dd><p>Represents a command that draws a rectangle on the canvas.
+Inherits from <span class="xref">BOOSE.CommandTwoParameters</span> and requires two integer parameters (width and height).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppSet.html">AppSet</a></dt>
+      <dd><p>Represents the <code>set</code> command, which assigns the result of an expression to an existing variable at runtime.
+Supports integer, real, and boolean variables.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppStoredProgram.html">AppStoredProgram</a></dt>
+      <dd><p>Application-specific implementation of <span class="xref">BOOSE.StoredProgram</span>.
+Adds method support (register/call/return) and provides overrides for updating and
+retrieving application variable types (real/boolean) as well as expression evaluation cleanup.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppWhile.html">AppWhile</a></dt>
+      <dd><p>Represents a <code>while</code> loop command.
+Evaluates a boolean expression and controls program flow by exiting the loop
+when the condition becomes false.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.AppWrite.html">AppWrite</a></dt>
+      <dd><p>Represents the <code>write</code> command, which evaluates an expression (including string expressions)
+and writes the resulting text to the canvas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.CanvasException.html">CanvasException</a></dt>
+      <dd><p>Represents errors that occur during canvas operations such as drawing or rendering.
+Inherits from the base <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Booseapp.Form1.html">Form1</a></dt>
+      <dd><p>Represents the main form of the Boose application.
+Handles initialization, user interactions, and drawing operations on the canvas.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

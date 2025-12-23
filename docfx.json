@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../Advanced-Software-Engineering-Boose-",
+          "files": [
+            "Booseapp/Booseapp.csproj",
+            "Booseapptest/Booseapptest.csproj"
+          ]
+
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "ASE-BOOSE-DOC",
+      "_appTitle": "ASE-BOOSE-DOC",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}
