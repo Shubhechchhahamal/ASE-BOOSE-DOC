@@ -1,8 +1,8 @@
-name: Deploy DocFX to GitHub Pages
+name: Deploy DocFX site to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -19,12 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
+
       - run: dotnet tool update -g docfx
       - run: docfx docfx.json
       - run: touch _site/.nojekyll
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
