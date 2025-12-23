@@ -1,3 +1,3 @@
 ---
-redirect_url: api/index.html
+redirect_url: api/Index.html
 ---
