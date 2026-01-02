@@ -1,0 +1,449 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booseapptest.AppArrayTests
+  commentId: T:Booseapptest.AppArrayTests
+  id: AppArrayTests
+  parent: Booseapptest
+  children:
+  - Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue
+  - Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue
+  - Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws
+  langs:
+  - csharp
+  - vb
+  name: AppArrayTests
+  nameWithType: AppArrayTests
+  fullName: Booseapptest.AppArrayTests
+  type: Class
+  source:
+    remote:
+      path: Booseapptest/AppArrayTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppArrayTests
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppArrayTests.cs
+    startLine: 11
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Unit tests for array-related commands/behaviour in the BOOSE application layer:
+
+    verifies correct poke/peek operations for int and real arrays, and validates
+
+    out-of-bounds access throws the expected exception.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class AppArrayTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class AppArrayTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue
+  commentId: M:Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue
+  id: ArrayInt_PokeThenPeek_ReturnsSameValue
+  parent: Booseapptest.AppArrayTests
+  langs:
+  - csharp
+  - vb
+  name: ArrayInt_PokeThenPeek_ReturnsSameValue()
+  nameWithType: AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue()
+  fullName: Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppArrayTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: ArrayInt_PokeThenPeek_ReturnsSameValue
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppArrayTests.cs
+    startLine: 29
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures that writing an integer value into an integer array using poke and then
+
+    reading it back using peek returns the same value.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void ArrayInt_PokeThenPeek_ReturnsSameValue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub ArrayInt_PokeThenPeek_ReturnsSameValue()
+  overload: Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue
+  commentId: M:Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue
+  id: ArrayReal_PokeThenPeek_ReturnsSameValue
+  parent: Booseapptest.AppArrayTests
+  langs:
+  - csharp
+  - vb
+  name: ArrayReal_PokeThenPeek_ReturnsSameValue()
+  nameWithType: AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue()
+  fullName: Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppArrayTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: ArrayReal_PokeThenPeek_ReturnsSameValue
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppArrayTests.cs
+    startLine: 63
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures that writing a real (floating-point) value into a real array using poke and then
+
+    reading it back using peek returns the same value.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void ArrayReal_PokeThenPeek_ReturnsSameValue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub ArrayReal_PokeThenPeek_ReturnsSameValue()
+  overload: Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws
+  commentId: M:Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws
+  id: Array_Peek_OutOfBounds_Throws
+  parent: Booseapptest.AppArrayTests
+  langs:
+  - csharp
+  - vb
+  name: Array_Peek_OutOfBounds_Throws()
+  nameWithType: AppArrayTests.Array_Peek_OutOfBounds_Throws()
+  fullName: Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppArrayTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: Array_Peek_OutOfBounds_Throws
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppArrayTests.cs
+    startLine: 97
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Verifies that attempting to peek an array element using an index outside the declared bounds
+
+    results in a <xref href="BOOSE.CommandException" data-throw-if-not-resolved="false"></xref> being thrown.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Array_Peek_OutOfBounds_Throws()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Array_Peek_OutOfBounds_Throws()
+  overload: Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: Booseapptest
+  commentId: N:Booseapptest
+  href: Booseapptest.html
+  name: Booseapptest
+  nameWithType: Booseapptest
+  fullName: Booseapptest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue*
+  commentId: Overload:Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue
+  href: Booseapptest.AppArrayTests.html#Booseapptest_AppArrayTests_ArrayInt_PokeThenPeek_ReturnsSameValue
+  name: ArrayInt_PokeThenPeek_ReturnsSameValue
+  nameWithType: AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue
+  fullName: Booseapptest.AppArrayTests.ArrayInt_PokeThenPeek_ReturnsSameValue
+- uid: Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue*
+  commentId: Overload:Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue
+  href: Booseapptest.AppArrayTests.html#Booseapptest_AppArrayTests_ArrayReal_PokeThenPeek_ReturnsSameValue
+  name: ArrayReal_PokeThenPeek_ReturnsSameValue
+  nameWithType: AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue
+  fullName: Booseapptest.AppArrayTests.ArrayReal_PokeThenPeek_ReturnsSameValue
+- uid: BOOSE.CommandException
+  commentId: T:BOOSE.CommandException
+  isExternal: true
+  name: CommandException
+  nameWithType: CommandException
+  fullName: BOOSE.CommandException
+- uid: Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws*
+  commentId: Overload:Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws
+  href: Booseapptest.AppArrayTests.html#Booseapptest_AppArrayTests_Array_Peek_OutOfBounds_Throws
+  name: Array_Peek_OutOfBounds_Throws
+  nameWithType: AppArrayTests.Array_Peek_OutOfBounds_Throws
+  fullName: Booseapptest.AppArrayTests.Array_Peek_OutOfBounds_Throws

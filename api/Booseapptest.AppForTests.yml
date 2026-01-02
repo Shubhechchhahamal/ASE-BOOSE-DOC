@@ -1,0 +1,439 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booseapptest.AppForTests
+  commentId: T:Booseapptest.AppForTests
+  id: AppForTests
+  parent: Booseapptest
+  children:
+  - Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart
+  - Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar
+  langs:
+  - csharp
+  - vb
+  name: AppForTests
+  nameWithType: AppForTests
+  fullName: Booseapptest.AppForTests
+  type: Class
+  source:
+    remote:
+      path: Booseapptest/AppForTest.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppForTests
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppForTest.cs
+    startLine: 11
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Unit tests for the <xref href="Booseapp.AppFor" data-throw-if-not-resolved="false"></xref> command:
+
+    verifies initial execution sets the loop variable correctly and that subsequent
+
+    iterations increment the loop variable as expected.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class AppForTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class AppForTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart
+  commentId: M:Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart
+  id: AppFor_InitialExecute_SetsLoopVarToStart
+  parent: Booseapptest.AppForTests
+  langs:
+  - csharp
+  - vb
+  name: AppFor_InitialExecute_SetsLoopVarToStart()
+  nameWithType: AppForTests.AppFor_InitialExecute_SetsLoopVarToStart()
+  fullName: Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppForTest.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppFor_InitialExecute_SetsLoopVarToStart
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppForTest.cs
+    startLine: 30
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures that the first <xref href="Booseapp.AppFor.Execute" data-throw-if-not-resolved="false"></xref> call initializes the loop variable
+
+    to the specified start value, sets the loop condition to true when within range,
+
+    and does not modify the program counter when the loop should continue.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppFor_InitialExecute_SetsLoopVarToStart()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppFor_InitialExecute_SetsLoopVarToStart()
+  overload: Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar
+  commentId: M:Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar
+  id: AppFor_NextIteration_IncrementsLoopVar
+  parent: Booseapptest.AppForTests
+  langs:
+  - csharp
+  - vb
+  name: AppFor_NextIteration_IncrementsLoopVar()
+  nameWithType: AppForTests.AppFor_NextIteration_IncrementsLoopVar()
+  fullName: Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppForTest.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppFor_NextIteration_IncrementsLoopVar
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppForTest.cs
+    startLine: 59
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures that calling <xref href="Booseapp.AppFor.NextIteration" data-throw-if-not-resolved="false"></xref> advances the loop variable
+
+    by the configured step value after initialization.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppFor_NextIteration_IncrementsLoopVar()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppFor_NextIteration_IncrementsLoopVar()
+  overload: Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: Booseapp.AppFor
+  commentId: T:Booseapp.AppFor
+  href: Booseapp.AppFor.html
+  name: AppFor
+  nameWithType: AppFor
+  fullName: Booseapp.AppFor
+- uid: Booseapptest
+  commentId: N:Booseapptest
+  href: Booseapptest.html
+  name: Booseapptest
+  nameWithType: Booseapptest
+  fullName: Booseapptest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Booseapp.AppFor.Execute
+  commentId: M:Booseapp.AppFor.Execute
+  href: Booseapp.AppFor.html#Booseapp_AppFor_Execute
+  name: Execute()
+  nameWithType: AppFor.Execute()
+  fullName: Booseapp.AppFor.Execute()
+  spec.csharp:
+  - uid: Booseapp.AppFor.Execute
+    name: Execute
+    href: Booseapp.AppFor.html#Booseapp_AppFor_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Booseapp.AppFor.Execute
+    name: Execute
+    href: Booseapp.AppFor.html#Booseapp_AppFor_Execute
+  - name: (
+  - name: )
+- uid: Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart*
+  commentId: Overload:Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart
+  href: Booseapptest.AppForTests.html#Booseapptest_AppForTests_AppFor_InitialExecute_SetsLoopVarToStart
+  name: AppFor_InitialExecute_SetsLoopVarToStart
+  nameWithType: AppForTests.AppFor_InitialExecute_SetsLoopVarToStart
+  fullName: Booseapptest.AppForTests.AppFor_InitialExecute_SetsLoopVarToStart
+- uid: Booseapp.AppFor.NextIteration
+  commentId: M:Booseapp.AppFor.NextIteration
+  href: Booseapp.AppFor.html#Booseapp_AppFor_NextIteration
+  name: NextIteration()
+  nameWithType: AppFor.NextIteration()
+  fullName: Booseapp.AppFor.NextIteration()
+  spec.csharp:
+  - uid: Booseapp.AppFor.NextIteration
+    name: NextIteration
+    href: Booseapp.AppFor.html#Booseapp_AppFor_NextIteration
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Booseapp.AppFor.NextIteration
+    name: NextIteration
+    href: Booseapp.AppFor.html#Booseapp_AppFor_NextIteration
+  - name: (
+  - name: )
+- uid: Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar*
+  commentId: Overload:Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar
+  href: Booseapptest.AppForTests.html#Booseapptest_AppForTests_AppFor_NextIteration_IncrementsLoopVar
+  name: AppFor_NextIteration_IncrementsLoopVar
+  nameWithType: AppForTests.AppFor_NextIteration_IncrementsLoopVar
+  fullName: Booseapptest.AppForTests.AppFor_NextIteration_IncrementsLoopVar

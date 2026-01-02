@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booseapptest.AppIntTests
+  commentId: T:Booseapptest.AppIntTests
+  id: AppIntTests
+  parent: Booseapptest
+  children:
+  - Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue
+  - Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger
+  - Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue
+  langs:
+  - csharp
+  - vb
+  name: AppIntTests
+  nameWithType: AppIntTests
+  fullName: Booseapptest.AppIntTests
+  type: Class
+  source:
+    remote:
+      path: Booseapptest/AppIntTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppIntTests
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppIntTests.cs
+    startLine: 11
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Unit tests for the <xref href="Booseapp.AppInt" data-throw-if-not-resolved="false"></xref> command/variable handling:
+
+    verifies integer variables are created on compile, valid integer values (including negatives)
+
+    are set correctly, and non-integer values are rejected with the expected exception.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class AppIntTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class AppIntTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue
+  commentId: M:Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue
+  id: AppInt_Compile_AddsVariableAndSetsValue
+  parent: Booseapptest.AppIntTests
+  langs:
+  - csharp
+  - vb
+  name: AppInt_Compile_AddsVariableAndSetsValue()
+  nameWithType: AppIntTests.AppInt_Compile_AddsVariableAndSetsValue()
+  fullName: Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppIntTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppInt_Compile_AddsVariableAndSetsValue
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppIntTests.cs
+    startLine: 29
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures compiling an integer declaration/assignment adds the variable to the program
+
+    and sets its value to the provided integer.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppInt_Compile_AddsVariableAndSetsValue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppInt_Compile_AddsVariableAndSetsValue()
+  overload: Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger
+  commentId: M:Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger
+  id: AppInt_Compile_AllowsNegativeInteger
+  parent: Booseapptest.AppIntTests
+  langs:
+  - csharp
+  - vb
+  name: AppInt_Compile_AllowsNegativeInteger()
+  nameWithType: AppIntTests.AppInt_Compile_AllowsNegativeInteger()
+  fullName: Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppIntTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppInt_Compile_AllowsNegativeInteger
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppIntTests.cs
+    startLine: 46
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures compiling an integer declaration/assignment supports negative integer values
+
+    and stores the correct string representation in the program.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppInt_Compile_AllowsNegativeInteger()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppInt_Compile_AllowsNegativeInteger()
+  overload: Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue
+  commentId: M:Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue
+  id: AppInt_Compile_RejectsRealValue
+  parent: Booseapptest.AppIntTests
+  langs:
+  - csharp
+  - vb
+  name: AppInt_Compile_RejectsRealValue()
+  nameWithType: AppIntTests.AppInt_Compile_RejectsRealValue()
+  fullName: Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue()
+  type: Method
+  source:
+    remote:
+      path: Booseapptest/AppIntTests.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppInt_Compile_RejectsRealValue
+    path: ../Advanced-Software-Engineering-Boose-/Booseapptest/AppIntTests.cs
+    startLine: 63
+  assemblies:
+  - Booseapptest
+  namespace: Booseapptest
+  summary: >-
+    Ensures compiling an integer declaration/assignment rejects real/decimal values
+
+    and throws a <xref href="BOOSE.StoredProgramException" data-throw-if-not-resolved="false"></xref> for invalid input.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppInt_Compile_RejectsRealValue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppInt_Compile_RejectsRealValue()
+  overload: Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: Booseapp.AppInt
+  commentId: T:Booseapp.AppInt
+  href: Booseapp.AppInt.html
+  name: AppInt
+  nameWithType: AppInt
+  fullName: Booseapp.AppInt
+- uid: Booseapptest
+  commentId: N:Booseapptest
+  href: Booseapptest.html
+  name: Booseapptest
+  nameWithType: Booseapptest
+  fullName: Booseapptest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue*
+  commentId: Overload:Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue
+  href: Booseapptest.AppIntTests.html#Booseapptest_AppIntTests_AppInt_Compile_AddsVariableAndSetsValue
+  name: AppInt_Compile_AddsVariableAndSetsValue
+  nameWithType: AppIntTests.AppInt_Compile_AddsVariableAndSetsValue
+  fullName: Booseapptest.AppIntTests.AppInt_Compile_AddsVariableAndSetsValue
+- uid: Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger*
+  commentId: Overload:Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger
+  href: Booseapptest.AppIntTests.html#Booseapptest_AppIntTests_AppInt_Compile_AllowsNegativeInteger
+  name: AppInt_Compile_AllowsNegativeInteger
+  nameWithType: AppIntTests.AppInt_Compile_AllowsNegativeInteger
+  fullName: Booseapptest.AppIntTests.AppInt_Compile_AllowsNegativeInteger
+- uid: BOOSE.StoredProgramException
+  commentId: T:BOOSE.StoredProgramException
+  isExternal: true
+  name: StoredProgramException
+  nameWithType: StoredProgramException
+  fullName: BOOSE.StoredProgramException
+- uid: Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue*
+  commentId: Overload:Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue
+  href: Booseapptest.AppIntTests.html#Booseapptest_AppIntTests_AppInt_Compile_RejectsRealValue
+  name: AppInt_Compile_RejectsRealValue
+  nameWithType: AppIntTests.AppInt_Compile_RejectsRealValue
+  fullName: Booseapptest.AppIntTests.AppInt_Compile_RejectsRealValue

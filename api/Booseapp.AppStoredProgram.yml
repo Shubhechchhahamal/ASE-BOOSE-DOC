@@ -1,0 +1,3331 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booseapp.AppStoredProgram
+  commentId: T:Booseapp.AppStoredProgram
+  id: AppStoredProgram
+  parent: Booseapp
+  children:
+  - Booseapp.AppStoredProgram.#ctor(BOOSE.ICanvas)
+  - Booseapp.AppStoredProgram.EvaluateExpression(System.String)
+  - Booseapp.AppStoredProgram.GetMethod(System.String)
+  - Booseapp.AppStoredProgram.GetVarValue(System.String)
+  - Booseapp.AppStoredProgram.HasMethodReturn
+  - Booseapp.AppStoredProgram.PopMethodReturn
+  - Booseapp.AppStoredProgram.PushMethodReturn(System.Int32)
+  - Booseapp.AppStoredProgram.RegisterMethod(Booseapp.AppMethod)
+  - Booseapp.AppStoredProgram.UpdateVariable(System.String,System.Double)
+  - Booseapp.AppStoredProgram.UpdateVariable(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram
+  fullName: Booseapp.AppStoredProgram
+  type: Class
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: AppStoredProgram
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 12
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Application-specific implementation of <xref href="BOOSE.StoredProgram" data-throw-if-not-resolved="false"></xref>.
+
+    Adds method support (register/call/return) and provides overrides for updating and
+
+    retrieving application variable types (real/boolean) as well as expression evaluation cleanup.
+  example: []
+  syntax:
+    content: 'public class AppStoredProgram : StoredProgram, IList, ICollection, IEnumerable, ICloneable, IStoredProgram'
+    content.vb: Public Class AppStoredProgram Inherits StoredProgram Implements IList, ICollection, IEnumerable, ICloneable, IStoredProgram
+  inheritance:
+  - System.Object
+  - System.Collections.ArrayList
+  - BOOSE.StoredProgram
+  implements:
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.ICloneable
+  - BOOSE.IStoredProgram
+  inheritedMembers:
+  - BOOSE.StoredProgram.IsValidProgram
+  - BOOSE.StoredProgram.SetSyntaxStatus(System.Boolean)
+  - BOOSE.StoredProgram.AddMethod(BOOSE.Method)
+  - BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)
+  - BOOSE.StoredProgram.GetVariable(System.String)
+  - BOOSE.StoredProgram.GetVariable(System.Int32)
+  - BOOSE.StoredProgram.FindVariable(BOOSE.Evaluation)
+  - BOOSE.StoredProgram.FindVariable(System.String)
+  - BOOSE.StoredProgram.VariableExists(System.String)
+  - BOOSE.StoredProgram.UpdateVariable(System.String,System.Boolean)
+  - BOOSE.StoredProgram.DeleteVariable(System.String)
+  - BOOSE.StoredProgram.IsExpression(System.String)
+  - BOOSE.StoredProgram.EvaluateExpressionWithString(System.String)
+  - BOOSE.StoredProgram.Push(BOOSE.ConditionalCommand)
+  - BOOSE.StoredProgram.Pop
+  - BOOSE.StoredProgram.Add(BOOSE.Command)
+  - BOOSE.StoredProgram.NextCommand
+  - BOOSE.StoredProgram.ResetProgram
+  - BOOSE.StoredProgram.Commandsleft
+  - BOOSE.StoredProgram.Run
+  - BOOSE.StoredProgram.PC
+  - System.Collections.ArrayList.Adapter(System.Collections.IList)
+  - System.Collections.ArrayList.Add(System.Object)
+  - System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  - System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  - System.Collections.ArrayList.BinarySearch(System.Object)
+  - System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+  - System.Collections.ArrayList.Clear
+  - System.Collections.ArrayList.Clone
+  - System.Collections.ArrayList.Contains(System.Object)
+  - System.Collections.ArrayList.CopyTo(System.Array)
+  - System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+  - System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  - System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  - System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  - System.Collections.ArrayList.GetEnumerator
+  - System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+  - System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+  - System.Collections.ArrayList.IndexOf(System.Object)
+  - System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+  - System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+  - System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  - System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+  - System.Collections.ArrayList.LastIndexOf(System.Object)
+  - System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+  - System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+  - System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  - System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  - System.Collections.ArrayList.Remove(System.Object)
+  - System.Collections.ArrayList.RemoveAt(System.Int32)
+  - System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  - System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+  - System.Collections.ArrayList.Reverse
+  - System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+  - System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+  - System.Collections.ArrayList.Sort
+  - System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  - System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  - System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  - System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  - System.Collections.ArrayList.ToArray
+  - System.Collections.ArrayList.ToArray(System.Type)
+  - System.Collections.ArrayList.TrimToSize
+  - System.Collections.ArrayList.Capacity
+  - System.Collections.ArrayList.Count
+  - System.Collections.ArrayList.IsFixedSize
+  - System.Collections.ArrayList.IsReadOnly
+  - System.Collections.ArrayList.IsSynchronized
+  - System.Collections.ArrayList.Item(System.Int32)
+  - System.Collections.ArrayList.SyncRoot
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Booseapp.AppStoredProgram.#ctor(BOOSE.ICanvas)
+  commentId: M:Booseapp.AppStoredProgram.#ctor(BOOSE.ICanvas)
+  id: '#ctor(BOOSE.ICanvas)'
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: AppStoredProgram(ICanvas)
+  nameWithType: AppStoredProgram.AppStoredProgram(ICanvas)
+  fullName: Booseapp.AppStoredProgram.AppStoredProgram(BOOSE.ICanvas)
+  type: Constructor
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: .ctor
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 23
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Initializes a new instance of the <xref href="Booseapp.AppStoredProgram" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public AppStoredProgram(ICanvas canvas)
+    parameters:
+    - id: canvas
+      type: BOOSE.ICanvas
+      description: The canvas used by the stored program for drawing.
+    content.vb: Public Sub New(canvas As ICanvas)
+  overload: Booseapp.AppStoredProgram.#ctor*
+  nameWithType.vb: AppStoredProgram.New(ICanvas)
+  fullName.vb: Booseapp.AppStoredProgram.New(BOOSE.ICanvas)
+  name.vb: New(ICanvas)
+- uid: Booseapp.AppStoredProgram.RegisterMethod(Booseapp.AppMethod)
+  commentId: M:Booseapp.AppStoredProgram.RegisterMethod(Booseapp.AppMethod)
+  id: RegisterMethod(Booseapp.AppMethod)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: RegisterMethod(AppMethod)
+  nameWithType: AppStoredProgram.RegisterMethod(AppMethod)
+  fullName: Booseapp.AppStoredProgram.RegisterMethod(Booseapp.AppMethod)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: RegisterMethod
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 33
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Registers a method definition so it can be located later by <code>call</code>.
+
+    If a method with the same name already exists, it will be replaced.
+  example: []
+  syntax:
+    content: public void RegisterMethod(AppMethod m)
+    parameters:
+    - id: m
+      type: Booseapp.AppMethod
+      description: The method definition to register.
+    content.vb: Public Sub RegisterMethod(m As AppMethod)
+  overload: Booseapp.AppStoredProgram.RegisterMethod*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">m</code> is null.
+- uid: Booseapp.AppStoredProgram.GetMethod(System.String)
+  commentId: M:Booseapp.AppStoredProgram.GetMethod(System.String)
+  id: GetMethod(System.String)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: GetMethod(string)
+  nameWithType: AppStoredProgram.GetMethod(string)
+  fullName: Booseapp.AppStoredProgram.GetMethod(string)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: GetMethod
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 45
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Retrieves a registered method by name.
+  example: []
+  syntax:
+    content: public AppMethod GetMethod(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The method name.
+    return:
+      type: Booseapp.AppMethod
+      description: The registered <xref href="Booseapp.AppMethod" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetMethod(name As String) As AppMethod
+  overload: Booseapp.AppStoredProgram.GetMethod*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown when the method is not found.
+  nameWithType.vb: AppStoredProgram.GetMethod(String)
+  fullName.vb: Booseapp.AppStoredProgram.GetMethod(String)
+  name.vb: GetMethod(String)
+- uid: Booseapp.AppStoredProgram.PushMethodReturn(System.Int32)
+  commentId: M:Booseapp.AppStoredProgram.PushMethodReturn(System.Int32)
+  id: PushMethodReturn(System.Int32)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: PushMethodReturn(int)
+  nameWithType: AppStoredProgram.PushMethodReturn(int)
+  fullName: Booseapp.AppStoredProgram.PushMethodReturn(int)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: PushMethodReturn
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 57
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Pushes a return program counter onto the method return stack.
+
+    This is used to return execution to the instruction after a <code>call</code>.
+  example: []
+  syntax:
+    content: public void PushMethodReturn(int returnPc)
+    parameters:
+    - id: returnPc
+      type: System.Int32
+      description: The program counter value to return to.
+    content.vb: Public Sub PushMethodReturn(returnPc As Integer)
+  overload: Booseapp.AppStoredProgram.PushMethodReturn*
+  nameWithType.vb: AppStoredProgram.PushMethodReturn(Integer)
+  fullName.vb: Booseapp.AppStoredProgram.PushMethodReturn(Integer)
+  name.vb: PushMethodReturn(Integer)
+- uid: Booseapp.AppStoredProgram.PopMethodReturn
+  commentId: M:Booseapp.AppStoredProgram.PopMethodReturn
+  id: PopMethodReturn
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: PopMethodReturn()
+  nameWithType: AppStoredProgram.PopMethodReturn()
+  fullName: Booseapp.AppStoredProgram.PopMethodReturn()
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: PopMethodReturn
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 67
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Pops a return program counter from the method return stack.
+  example: []
+  syntax:
+    content: public int PopMethodReturn()
+    return:
+      type: System.Int32
+      description: The program counter value to return to.
+    content.vb: Public Function PopMethodReturn() As Integer
+  overload: Booseapp.AppStoredProgram.PopMethodReturn*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown when the return stack is empty.
+- uid: Booseapp.AppStoredProgram.HasMethodReturn
+  commentId: P:Booseapp.AppStoredProgram.HasMethodReturn
+  id: HasMethodReturn
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: HasMethodReturn
+  nameWithType: AppStoredProgram.HasMethodReturn
+  fullName: Booseapp.AppStoredProgram.HasMethodReturn
+  type: Property
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: HasMethodReturn
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 77
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: Gets a value indicating whether the method return stack contains a pending return address.
+  example: []
+  syntax:
+    content: public bool HasMethodReturn { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasMethodReturn As Boolean
+  overload: Booseapp.AppStoredProgram.HasMethodReturn*
+- uid: Booseapp.AppStoredProgram.UpdateVariable(System.String,System.Double)
+  commentId: M:Booseapp.AppStoredProgram.UpdateVariable(System.String,System.Double)
+  id: UpdateVariable(System.String,System.Double)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: UpdateVariable(string, double)
+  nameWithType: AppStoredProgram.UpdateVariable(string, double)
+  fullName: Booseapp.AppStoredProgram.UpdateVariable(string, double)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: UpdateVariable
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 88
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Updates a variable with a real (double) value.
+
+    Supports <xref href="Booseapp.AppReal" data-throw-if-not-resolved="false"></xref> and BOOSE <xref href="BOOSE.Real" data-throw-if-not-resolved="false"></xref> variables.
+  example: []
+  syntax:
+    content: public override void UpdateVariable(string varName, double value)
+    parameters:
+    - id: varName
+      type: System.String
+      description: The variable name.
+    - id: value
+      type: System.Double
+      description: The new double value.
+    content.vb: Public Overrides Sub UpdateVariable(varName As String, value As Double)
+  overridden: BOOSE.StoredProgram.UpdateVariable(System.String,System.Double)
+  overload: Booseapp.AppStoredProgram.UpdateVariable*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown when the variable type is not compatible with a real value.
+  nameWithType.vb: AppStoredProgram.UpdateVariable(String, Double)
+  fullName.vb: Booseapp.AppStoredProgram.UpdateVariable(String, Double)
+  name.vb: UpdateVariable(String, Double)
+- uid: Booseapp.AppStoredProgram.UpdateVariable(System.String,System.Int32)
+  commentId: M:Booseapp.AppStoredProgram.UpdateVariable(System.String,System.Int32)
+  id: UpdateVariable(System.String,System.Int32)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: UpdateVariable(string, int)
+  nameWithType: AppStoredProgram.UpdateVariable(string, int)
+  fullName: Booseapp.AppStoredProgram.UpdateVariable(string, int)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: UpdateVariable
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 113
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Updates a variable with an integer value.
+
+    Supports application and BOOSE boolean variables (stored as 0/1), otherwise falls back to base behaviour.
+  example: []
+  syntax:
+    content: public override void UpdateVariable(string varName, int value)
+    parameters:
+    - id: varName
+      type: System.String
+      description: The variable name.
+    - id: value
+      type: System.Int32
+      description: The new integer value.
+    content.vb: Public Overrides Sub UpdateVariable(varName As String, value As Integer)
+  overridden: BOOSE.StoredProgram.UpdateVariable(System.String,System.Int32)
+  overload: Booseapp.AppStoredProgram.UpdateVariable*
+  nameWithType.vb: AppStoredProgram.UpdateVariable(String, Integer)
+  fullName.vb: Booseapp.AppStoredProgram.UpdateVariable(String, Integer)
+  name.vb: UpdateVariable(String, Integer)
+- uid: Booseapp.AppStoredProgram.GetVarValue(System.String)
+  commentId: M:Booseapp.AppStoredProgram.GetVarValue(System.String)
+  id: GetVarValue(System.String)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: GetVarValue(string)
+  nameWithType: AppStoredProgram.GetVarValue(string)
+  fullName: Booseapp.AppStoredProgram.GetVarValue(string)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: GetVarValue
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 140
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Retrieves the current value of a variable as a string.
+
+    Handles application real/boolean types and BOOSE real/boolean types.
+
+    Returns "0" if the variable cannot be retrieved.
+  example: []
+  syntax:
+    content: public override string GetVarValue(string varName)
+    parameters:
+    - id: varName
+      type: System.String
+      description: The variable name.
+    return:
+      type: System.String
+      description: The variable value as a string.
+    content.vb: Public Overrides Function GetVarValue(varName As String) As String
+  overridden: BOOSE.StoredProgram.GetVarValue(System.String)
+  overload: Booseapp.AppStoredProgram.GetVarValue*
+  nameWithType.vb: AppStoredProgram.GetVarValue(String)
+  fullName.vb: Booseapp.AppStoredProgram.GetVarValue(String)
+  name.vb: GetVarValue(String)
+- uid: Booseapp.AppStoredProgram.EvaluateExpression(System.String)
+  commentId: M:Booseapp.AppStoredProgram.EvaluateExpression(System.String)
+  id: EvaluateExpression(System.String)
+  parent: Booseapp.AppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: EvaluateExpression(string)
+  nameWithType: AppStoredProgram.EvaluateExpression(string)
+  fullName: Booseapp.AppStoredProgram.EvaluateExpression(string)
+  type: Method
+  source:
+    remote:
+      path: Booseapp/AppStoredProgram.cs
+      branch: main
+      repo: https://github.com/Shubhechchhahamal/Advanced-Software-Engineering-Boose-.git
+    id: EvaluateExpression
+    path: ../Advanced-Software-Engineering-Boose-/Booseapp/AppStoredProgram.cs
+    startLine: 173
+  assemblies:
+  - Booseapp
+  namespace: Booseapp
+  summary: >-
+    Evaluates an expression and returns the result as a string.
+
+    Performs light sanitisation of the expression and short-circuits evaluation for pure numeric values.
+  example: []
+  syntax:
+    content: public override string EvaluateExpression(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+      description: The expression to evaluate.
+    return:
+      type: System.String
+      description: The evaluated result as a string.
+    content.vb: Public Overrides Function EvaluateExpression(expression As String) As String
+  overridden: BOOSE.StoredProgram.EvaluateExpression(System.String)
+  overload: Booseapp.AppStoredProgram.EvaluateExpression*
+  nameWithType.vb: AppStoredProgram.EvaluateExpression(String)
+  fullName.vb: Booseapp.AppStoredProgram.EvaluateExpression(String)
+  name.vb: EvaluateExpression(String)
+references:
+- uid: BOOSE.StoredProgram
+  commentId: T:BOOSE.StoredProgram
+  parent: BOOSE
+  isExternal: true
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: BOOSE.StoredProgram
+- uid: Booseapp
+  commentId: N:Booseapp
+  href: Booseapp.html
+  name: Booseapp
+  nameWithType: Booseapp
+  fullName: Booseapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.ArrayList
+  commentId: T:System.Collections.ArrayList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  name: ArrayList
+  nameWithType: ArrayList
+  fullName: System.Collections.ArrayList
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: BOOSE.IStoredProgram
+  commentId: T:BOOSE.IStoredProgram
+  parent: BOOSE
+  isExternal: true
+  name: IStoredProgram
+  nameWithType: IStoredProgram
+  fullName: BOOSE.IStoredProgram
+- uid: BOOSE.StoredProgram.IsValidProgram
+  commentId: M:BOOSE.StoredProgram.IsValidProgram
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: IsValidProgram()
+  nameWithType: StoredProgram.IsValidProgram()
+  fullName: BOOSE.StoredProgram.IsValidProgram()
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.IsValidProgram
+    name: IsValidProgram
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.IsValidProgram
+    name: IsValidProgram
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.StoredProgram.SetSyntaxStatus(System.Boolean)
+  commentId: M:BOOSE.StoredProgram.SetSyntaxStatus(System.Boolean)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: SetSyntaxStatus(bool)
+  nameWithType: StoredProgram.SetSyntaxStatus(bool)
+  fullName: BOOSE.StoredProgram.SetSyntaxStatus(bool)
+  nameWithType.vb: StoredProgram.SetSyntaxStatus(Boolean)
+  fullName.vb: BOOSE.StoredProgram.SetSyntaxStatus(Boolean)
+  name.vb: SetSyntaxStatus(Boolean)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.SetSyntaxStatus(System.Boolean)
+    name: SetSyntaxStatus
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.SetSyntaxStatus(System.Boolean)
+    name: SetSyntaxStatus
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BOOSE.StoredProgram.AddMethod(BOOSE.Method)
+  commentId: M:BOOSE.StoredProgram.AddMethod(BOOSE.Method)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: AddMethod(Method)
+  nameWithType: StoredProgram.AddMethod(Method)
+  fullName: BOOSE.StoredProgram.AddMethod(BOOSE.Method)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.AddMethod(BOOSE.Method)
+    name: AddMethod
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Method
+    name: Method
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.AddMethod(BOOSE.Method)
+    name: AddMethod
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Method
+    name: Method
+    isExternal: true
+  - name: )
+- uid: BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)
+  commentId: M:BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: AddVariable(Evaluation)
+  nameWithType: StoredProgram.AddVariable(Evaluation)
+  fullName: BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)
+    name: AddVariable
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Evaluation
+    name: Evaluation
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)
+    name: AddVariable
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Evaluation
+    name: Evaluation
+    isExternal: true
+  - name: )
+- uid: BOOSE.StoredProgram.GetVariable(System.String)
+  commentId: M:BOOSE.StoredProgram.GetVariable(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetVariable(string)
+  nameWithType: StoredProgram.GetVariable(string)
+  fullName: BOOSE.StoredProgram.GetVariable(string)
+  nameWithType.vb: StoredProgram.GetVariable(String)
+  fullName.vb: BOOSE.StoredProgram.GetVariable(String)
+  name.vb: GetVariable(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.GetVariable(System.String)
+    name: GetVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.GetVariable(System.String)
+    name: GetVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram.GetVariable(System.Int32)
+  commentId: M:BOOSE.StoredProgram.GetVariable(System.Int32)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: GetVariable(int)
+  nameWithType: StoredProgram.GetVariable(int)
+  fullName: BOOSE.StoredProgram.GetVariable(int)
+  nameWithType.vb: StoredProgram.GetVariable(Integer)
+  fullName.vb: BOOSE.StoredProgram.GetVariable(Integer)
+  name.vb: GetVariable(Integer)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.GetVariable(System.Int32)
+    name: GetVariable
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.GetVariable(System.Int32)
+    name: GetVariable
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: BOOSE.StoredProgram.FindVariable(BOOSE.Evaluation)
+  commentId: M:BOOSE.StoredProgram.FindVariable(BOOSE.Evaluation)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: FindVariable(Evaluation)
+  nameWithType: StoredProgram.FindVariable(Evaluation)
+  fullName: BOOSE.StoredProgram.FindVariable(BOOSE.Evaluation)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.FindVariable(BOOSE.Evaluation)
+    name: FindVariable
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Evaluation
+    name: Evaluation
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.FindVariable(BOOSE.Evaluation)
+    name: FindVariable
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Evaluation
+    name: Evaluation
+    isExternal: true
+  - name: )
+- uid: BOOSE.StoredProgram.FindVariable(System.String)
+  commentId: M:BOOSE.StoredProgram.FindVariable(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FindVariable(string)
+  nameWithType: StoredProgram.FindVariable(string)
+  fullName: BOOSE.StoredProgram.FindVariable(string)
+  nameWithType.vb: StoredProgram.FindVariable(String)
+  fullName.vb: BOOSE.StoredProgram.FindVariable(String)
+  name.vb: FindVariable(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.FindVariable(System.String)
+    name: FindVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.FindVariable(System.String)
+    name: FindVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram.VariableExists(System.String)
+  commentId: M:BOOSE.StoredProgram.VariableExists(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: VariableExists(string)
+  nameWithType: StoredProgram.VariableExists(string)
+  fullName: BOOSE.StoredProgram.VariableExists(string)
+  nameWithType.vb: StoredProgram.VariableExists(String)
+  fullName.vb: BOOSE.StoredProgram.VariableExists(String)
+  name.vb: VariableExists(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.VariableExists(System.String)
+    name: VariableExists
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.VariableExists(System.String)
+    name: VariableExists
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Boolean)
+  commentId: M:BOOSE.StoredProgram.UpdateVariable(System.String,System.Boolean)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: UpdateVariable(string, bool)
+  nameWithType: StoredProgram.UpdateVariable(string, bool)
+  fullName: BOOSE.StoredProgram.UpdateVariable(string, bool)
+  nameWithType.vb: StoredProgram.UpdateVariable(String, Boolean)
+  fullName.vb: BOOSE.StoredProgram.UpdateVariable(String, Boolean)
+  name.vb: UpdateVariable(String, Boolean)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Boolean)
+    name: UpdateVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Boolean)
+    name: UpdateVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BOOSE.StoredProgram.DeleteVariable(System.String)
+  commentId: M:BOOSE.StoredProgram.DeleteVariable(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DeleteVariable(string)
+  nameWithType: StoredProgram.DeleteVariable(string)
+  fullName: BOOSE.StoredProgram.DeleteVariable(string)
+  nameWithType.vb: StoredProgram.DeleteVariable(String)
+  fullName.vb: BOOSE.StoredProgram.DeleteVariable(String)
+  name.vb: DeleteVariable(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.DeleteVariable(System.String)
+    name: DeleteVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.DeleteVariable(System.String)
+    name: DeleteVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram.IsExpression(System.String)
+  commentId: M:BOOSE.StoredProgram.IsExpression(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: IsExpression(string)
+  nameWithType: StoredProgram.IsExpression(string)
+  fullName: BOOSE.StoredProgram.IsExpression(string)
+  nameWithType.vb: StoredProgram.IsExpression(String)
+  fullName.vb: BOOSE.StoredProgram.IsExpression(String)
+  name.vb: IsExpression(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.IsExpression(System.String)
+    name: IsExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.IsExpression(System.String)
+    name: IsExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram.EvaluateExpressionWithString(System.String)
+  commentId: M:BOOSE.StoredProgram.EvaluateExpressionWithString(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: EvaluateExpressionWithString(string)
+  nameWithType: StoredProgram.EvaluateExpressionWithString(string)
+  fullName: BOOSE.StoredProgram.EvaluateExpressionWithString(string)
+  nameWithType.vb: StoredProgram.EvaluateExpressionWithString(String)
+  fullName.vb: BOOSE.StoredProgram.EvaluateExpressionWithString(String)
+  name.vb: EvaluateExpressionWithString(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.EvaluateExpressionWithString(System.String)
+    name: EvaluateExpressionWithString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.EvaluateExpressionWithString(System.String)
+    name: EvaluateExpressionWithString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram.Push(BOOSE.ConditionalCommand)
+  commentId: M:BOOSE.StoredProgram.Push(BOOSE.ConditionalCommand)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: Push(ConditionalCommand)
+  nameWithType: StoredProgram.Push(ConditionalCommand)
+  fullName: BOOSE.StoredProgram.Push(BOOSE.ConditionalCommand)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.Push(BOOSE.ConditionalCommand)
+    name: Push
+    isExternal: true
+  - name: (
+  - uid: BOOSE.ConditionalCommand
+    name: ConditionalCommand
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.Push(BOOSE.ConditionalCommand)
+    name: Push
+    isExternal: true
+  - name: (
+  - uid: BOOSE.ConditionalCommand
+    name: ConditionalCommand
+    isExternal: true
+  - name: )
+- uid: BOOSE.StoredProgram.Pop
+  commentId: M:BOOSE.StoredProgram.Pop
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: Pop()
+  nameWithType: StoredProgram.Pop()
+  fullName: BOOSE.StoredProgram.Pop()
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.Pop
+    name: Pop
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.Pop
+    name: Pop
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.StoredProgram.Add(BOOSE.Command)
+  commentId: M:BOOSE.StoredProgram.Add(BOOSE.Command)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: Add(Command)
+  nameWithType: StoredProgram.Add(Command)
+  fullName: BOOSE.StoredProgram.Add(BOOSE.Command)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.Add(BOOSE.Command)
+    name: Add
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Command
+    name: Command
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.Add(BOOSE.Command)
+    name: Add
+    isExternal: true
+  - name: (
+  - uid: BOOSE.Command
+    name: Command
+    isExternal: true
+  - name: )
+- uid: BOOSE.StoredProgram.NextCommand
+  commentId: M:BOOSE.StoredProgram.NextCommand
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: NextCommand()
+  nameWithType: StoredProgram.NextCommand()
+  fullName: BOOSE.StoredProgram.NextCommand()
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.NextCommand
+    name: NextCommand
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.NextCommand
+    name: NextCommand
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.StoredProgram.ResetProgram
+  commentId: M:BOOSE.StoredProgram.ResetProgram
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: ResetProgram()
+  nameWithType: StoredProgram.ResetProgram()
+  fullName: BOOSE.StoredProgram.ResetProgram()
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.ResetProgram
+    name: ResetProgram
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.ResetProgram
+    name: ResetProgram
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.StoredProgram.Commandsleft
+  commentId: M:BOOSE.StoredProgram.Commandsleft
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: Commandsleft()
+  nameWithType: StoredProgram.Commandsleft()
+  fullName: BOOSE.StoredProgram.Commandsleft()
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.Commandsleft
+    name: Commandsleft
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.Commandsleft
+    name: Commandsleft
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.StoredProgram.Run
+  commentId: M:BOOSE.StoredProgram.Run
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: Run()
+  nameWithType: StoredProgram.Run()
+  fullName: BOOSE.StoredProgram.Run()
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.Run
+    name: Run
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.Run
+    name: Run
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.StoredProgram.PC
+  commentId: P:BOOSE.StoredProgram.PC
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  name: PC
+  nameWithType: StoredProgram.PC
+  fullName: BOOSE.StoredProgram.PC
+- uid: System.Collections.ArrayList.Adapter(System.Collections.IList)
+  commentId: M:System.Collections.ArrayList.Adapter(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter
+  name: Adapter(IList)
+  nameWithType: ArrayList.Adapter(IList)
+  fullName: System.Collections.ArrayList.Adapter(System.Collections.IList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Adapter(System.Collections.IList)
+    name: Adapter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Adapter(System.Collections.IList)
+    name: Adapter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: System.Collections.ArrayList.Add(System.Object)
+  commentId: M:System.Collections.ArrayList.Add(System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  name: Add(object)
+  nameWithType: ArrayList.Add(object)
+  fullName: System.Collections.ArrayList.Add(object)
+  nameWithType.vb: ArrayList.Add(Object)
+  fullName.vb: System.Collections.ArrayList.Add(Object)
+  name.vb: Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  name: AddRange(ICollection)
+  nameWithType: ArrayList.AddRange(ICollection)
+  fullName: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+    name: AddRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+    name: AddRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange
+  - name: (
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  commentId: M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  name: BinarySearch(int, int, object, IComparer)
+  nameWithType: ArrayList.BinarySearch(int, int, object, IComparer)
+  fullName: System.Collections.ArrayList.BinarySearch(int, int, object, System.Collections.IComparer)
+  nameWithType.vb: ArrayList.BinarySearch(Integer, Integer, Object, IComparer)
+  fullName.vb: System.Collections.ArrayList.BinarySearch(Integer, Integer, Object, System.Collections.IComparer)
+  name.vb: BinarySearch(Integer, Integer, Object, IComparer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.ArrayList.BinarySearch(System.Object)
+  commentId: M:System.Collections.ArrayList.BinarySearch(System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)
+  name: BinarySearch(object)
+  nameWithType: ArrayList.BinarySearch(object)
+  fullName: System.Collections.ArrayList.BinarySearch(object)
+  nameWithType.vb: ArrayList.BinarySearch(Object)
+  fullName.vb: System.Collections.ArrayList.BinarySearch(Object)
+  name.vb: BinarySearch(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Object)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Object)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+  commentId: M:System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)
+  name: BinarySearch(object, IComparer)
+  nameWithType: ArrayList.BinarySearch(object, IComparer)
+  fullName: System.Collections.ArrayList.BinarySearch(object, System.Collections.IComparer)
+  nameWithType.vb: ArrayList.BinarySearch(Object, IComparer)
+  fullName.vb: System.Collections.ArrayList.BinarySearch(Object, System.Collections.IComparer)
+  name.vb: BinarySearch(Object, IComparer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+    name: BinarySearch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.ArrayList.Clear
+  commentId: M:System.Collections.ArrayList.Clear
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  name: Clear()
+  nameWithType: ArrayList.Clear()
+  fullName: System.Collections.ArrayList.Clear()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Clone
+  commentId: M:System.Collections.ArrayList.Clone
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone
+  name: Clone()
+  nameWithType: ArrayList.Clone()
+  fullName: System.Collections.ArrayList.Clone()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Contains(System.Object)
+  commentId: M:System.Collections.ArrayList.Contains(System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  name: Contains(object)
+  nameWithType: ArrayList.Contains(object)
+  fullName: System.Collections.ArrayList.Contains(object)
+  nameWithType.vb: ArrayList.Contains(Object)
+  fullName.vb: System.Collections.ArrayList.Contains(Object)
+  name.vb: Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.CopyTo(System.Array)
+  commentId: M:System.Collections.ArrayList.CopyTo(System.Array)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  name: CopyTo(Array)
+  nameWithType: ArrayList.CopyTo(Array)
+  fullName: System.Collections.ArrayList.CopyTo(System.Array)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: )
+- uid: System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)
+  name: CopyTo(Array, int)
+  nameWithType: ArrayList.CopyTo(Array, int)
+  fullName: System.Collections.ArrayList.CopyTo(System.Array, int)
+  nameWithType.vb: ArrayList.CopyTo(Array, Integer)
+  fullName.vb: System.Collections.ArrayList.CopyTo(System.Array, Integer)
+  name.vb: CopyTo(Array, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)
+  - name: (
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)
+  name: CopyTo(int, Array, int, int)
+  nameWithType: ArrayList.CopyTo(int, Array, int, int)
+  fullName: System.Collections.ArrayList.CopyTo(int, System.Array, int, int)
+  nameWithType.vb: ArrayList.CopyTo(Integer, Array, Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.CopyTo(Integer, System.Array, Integer, Integer)
+  name.vb: CopyTo(Integer, Array, Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Array
+    name: Array
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.array
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  commentId: M:System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)
+  name: FixedSize(ArrayList)
+  nameWithType: ArrayList.FixedSize(ArrayList)
+  fullName: System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+    name: FixedSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)
+  - name: (
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+    name: FixedSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)
+  - name: (
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  - name: )
+- uid: System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  commentId: M:System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)
+  name: FixedSize(IList)
+  nameWithType: ArrayList.FixedSize(IList)
+  fullName: System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.FixedSize(System.Collections.IList)
+    name: FixedSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.FixedSize(System.Collections.IList)
+    name: FixedSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: System.Collections.ArrayList.GetEnumerator
+  commentId: M:System.Collections.ArrayList.GetEnumerator
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator
+  name: GetEnumerator()
+  nameWithType: ArrayList.GetEnumerator()
+  fullName: System.Collections.ArrayList.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)
+  name: GetEnumerator(int, int)
+  nameWithType: ArrayList.GetEnumerator(int, int)
+  fullName: System.Collections.ArrayList.GetEnumerator(int, int)
+  nameWithType.vb: ArrayList.GetEnumerator(Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.GetEnumerator(Integer, Integer)
+  name.vb: GetEnumerator(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange
+  name: GetRange(int, int)
+  nameWithType: ArrayList.GetRange(int, int)
+  fullName: System.Collections.ArrayList.GetRange(int, int)
+  nameWithType.vb: ArrayList.GetRange(Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.GetRange(Integer, Integer)
+  name.vb: GetRange(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+    name: GetRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+    name: GetRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.IndexOf(System.Object)
+  commentId: M:System.Collections.ArrayList.IndexOf(System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  name: IndexOf(object)
+  nameWithType: ArrayList.IndexOf(object)
+  fullName: System.Collections.ArrayList.IndexOf(object)
+  nameWithType.vb: ArrayList.IndexOf(Object)
+  fullName.vb: System.Collections.ArrayList.IndexOf(Object)
+  name.vb: IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+  commentId: M:System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)
+  name: IndexOf(object, int)
+  nameWithType: ArrayList.IndexOf(object, int)
+  fullName: System.Collections.ArrayList.IndexOf(object, int)
+  nameWithType.vb: ArrayList.IndexOf(Object, Integer)
+  fullName.vb: System.Collections.ArrayList.IndexOf(Object, Integer)
+  name.vb: IndexOf(Object, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)
+  name: IndexOf(object, int, int)
+  nameWithType: ArrayList.IndexOf(object, int, int)
+  fullName: System.Collections.ArrayList.IndexOf(object, int, int)
+  nameWithType.vb: ArrayList.IndexOf(Object, Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.IndexOf(Object, Integer, Integer)
+  name.vb: IndexOf(Object, Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  name: Insert(int, object)
+  nameWithType: ArrayList.Insert(int, object)
+  fullName: System.Collections.ArrayList.Insert(int, object)
+  nameWithType.vb: ArrayList.Insert(Integer, Object)
+  fullName.vb: System.Collections.ArrayList.Insert(Integer, Object)
+  name.vb: Insert(Integer, Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insertrange
+  name: InsertRange(int, ICollection)
+  nameWithType: ArrayList.InsertRange(int, ICollection)
+  fullName: System.Collections.ArrayList.InsertRange(int, System.Collections.ICollection)
+  nameWithType.vb: ArrayList.InsertRange(Integer, ICollection)
+  fullName.vb: System.Collections.ArrayList.InsertRange(Integer, System.Collections.ICollection)
+  name.vb: InsertRange(Integer, ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+    name: InsertRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insertrange
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+    name: InsertRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insertrange
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: System.Collections.ArrayList.LastIndexOf(System.Object)
+  commentId: M:System.Collections.ArrayList.LastIndexOf(System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)
+  name: LastIndexOf(object)
+  nameWithType: ArrayList.LastIndexOf(object)
+  fullName: System.Collections.ArrayList.LastIndexOf(object)
+  nameWithType.vb: ArrayList.LastIndexOf(Object)
+  fullName.vb: System.Collections.ArrayList.LastIndexOf(Object)
+  name.vb: LastIndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.LastIndexOf(System.Object)
+    name: LastIndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.LastIndexOf(System.Object)
+    name: LastIndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+  commentId: M:System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)
+  name: LastIndexOf(object, int)
+  nameWithType: ArrayList.LastIndexOf(object, int)
+  fullName: System.Collections.ArrayList.LastIndexOf(object, int)
+  nameWithType.vb: ArrayList.LastIndexOf(Object, Integer)
+  fullName.vb: System.Collections.ArrayList.LastIndexOf(Object, Integer)
+  name.vb: LastIndexOf(Object, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+    name: LastIndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+    name: LastIndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)
+  name: LastIndexOf(object, int, int)
+  nameWithType: ArrayList.LastIndexOf(object, int, int)
+  fullName: System.Collections.ArrayList.LastIndexOf(object, int, int)
+  nameWithType.vb: ArrayList.LastIndexOf(Object, Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.LastIndexOf(Object, Integer, Integer)
+  name.vb: LastIndexOf(Object, Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+    name: LastIndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+    name: LastIndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  commentId: M:System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)
+  name: ReadOnly(ArrayList)
+  nameWithType: ArrayList.ReadOnly(ArrayList)
+  fullName: System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+    name: ReadOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)
+  - name: (
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+    name: ReadOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)
+  - name: (
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  - name: )
+- uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  commentId: M:System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)
+  name: ReadOnly(IList)
+  nameWithType: ArrayList.ReadOnly(IList)
+  fullName: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+    name: ReadOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+    name: ReadOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: System.Collections.ArrayList.Remove(System.Object)
+  commentId: M:System.Collections.ArrayList.Remove(System.Object)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  name: Remove(object)
+  nameWithType: ArrayList.Remove(object)
+  fullName: System.Collections.ArrayList.Remove(object)
+  nameWithType.vb: ArrayList.Remove(Object)
+  fullName.vb: System.Collections.ArrayList.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ArrayList.RemoveAt(System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  name: RemoveAt(int)
+  nameWithType: ArrayList.RemoveAt(int)
+  fullName: System.Collections.ArrayList.RemoveAt(int)
+  nameWithType.vb: ArrayList.RemoveAt(Integer)
+  fullName.vb: System.Collections.ArrayList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  name: RemoveRange(int, int)
+  nameWithType: ArrayList.RemoveRange(int, int)
+  fullName: System.Collections.ArrayList.RemoveRange(int, int)
+  nameWithType.vb: ArrayList.RemoveRange(Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+    name: RemoveRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+  commentId: M:System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat
+  name: Repeat(object, int)
+  nameWithType: ArrayList.Repeat(object, int)
+  fullName: System.Collections.ArrayList.Repeat(object, int)
+  nameWithType.vb: ArrayList.Repeat(Object, Integer)
+  fullName.vb: System.Collections.ArrayList.Repeat(Object, Integer)
+  name.vb: Repeat(Object, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+    name: Repeat
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+    name: Repeat
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.Reverse
+  commentId: M:System.Collections.ArrayList.Reverse
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  name: Reverse()
+  nameWithType: ArrayList.Reverse()
+  fullName: System.Collections.ArrayList.Reverse()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Reverse
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Reverse
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+  commentId: M:System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)
+  name: Reverse(int, int)
+  nameWithType: ArrayList.Reverse(int, int)
+  fullName: System.Collections.ArrayList.Reverse(int, int)
+  nameWithType.vb: ArrayList.Reverse(Integer, Integer)
+  fullName.vb: System.Collections.ArrayList.Reverse(Integer, Integer)
+  name.vb: Reverse(Integer, Integer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+    name: Reverse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+  commentId: M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange
+  name: SetRange(int, ICollection)
+  nameWithType: ArrayList.SetRange(int, ICollection)
+  fullName: System.Collections.ArrayList.SetRange(int, System.Collections.ICollection)
+  nameWithType.vb: ArrayList.SetRange(Integer, ICollection)
+  fullName.vb: System.Collections.ArrayList.SetRange(Integer, System.Collections.ICollection)
+  name.vb: SetRange(Integer, ICollection)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+    name: SetRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+    name: SetRange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.ICollection
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - name: )
+- uid: System.Collections.ArrayList.Sort
+  commentId: M:System.Collections.ArrayList.Sort
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  name: Sort()
+  nameWithType: ArrayList.Sort()
+  fullName: System.Collections.ArrayList.Sort()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Sort
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Sort
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  commentId: M:System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)
+  name: Sort(IComparer)
+  nameWithType: ArrayList.Sort(IComparer)
+  fullName: System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Sort(System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)
+  - name: (
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Sort(System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)
+  - name: (
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  commentId: M:System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)
+  name: Sort(int, int, IComparer)
+  nameWithType: ArrayList.Sort(int, int, IComparer)
+  fullName: System.Collections.ArrayList.Sort(int, int, System.Collections.IComparer)
+  nameWithType.vb: ArrayList.Sort(Integer, Integer, IComparer)
+  fullName.vb: System.Collections.ArrayList.Sort(Integer, Integer, System.Collections.IComparer)
+  name.vb: Sort(Integer, Integer, IComparer)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+    name: Sort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.IComparer
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+  - name: )
+- uid: System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  commentId: M:System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)
+  name: Synchronized(ArrayList)
+  nameWithType: ArrayList.Synchronized(ArrayList)
+  fullName: System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)
+  - name: (
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)
+  - name: (
+  - uid: System.Collections.ArrayList
+    name: ArrayList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist
+  - name: )
+- uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  commentId: M:System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)
+  name: Synchronized(IList)
+  nameWithType: ArrayList.Synchronized(IList)
+  fullName: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+    name: Synchronized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)
+  - name: (
+  - uid: System.Collections.IList
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - name: )
+- uid: System.Collections.ArrayList.ToArray
+  commentId: M:System.Collections.ArrayList.ToArray
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray
+  name: ToArray()
+  nameWithType: ArrayList.ToArray()
+  fullName: System.Collections.ArrayList.ToArray()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.ToArray
+    name: ToArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.ToArray
+    name: ToArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.ToArray(System.Type)
+  commentId: M:System.Collections.ArrayList.ToArray(System.Type)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)
+  name: ToArray(Type)
+  nameWithType: ArrayList.ToArray(Type)
+  fullName: System.Collections.ArrayList.ToArray(System.Type)
+  spec.csharp:
+  - uid: System.Collections.ArrayList.ToArray(System.Type)
+    name: ToArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.ToArray(System.Type)
+    name: ToArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.ArrayList.TrimToSize
+  commentId: M:System.Collections.ArrayList.TrimToSize
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  name: TrimToSize()
+  nameWithType: ArrayList.TrimToSize()
+  fullName: System.Collections.ArrayList.TrimToSize()
+  spec.csharp:
+  - uid: System.Collections.ArrayList.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ArrayList.TrimToSize
+    name: TrimToSize
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize
+  - name: (
+  - name: )
+- uid: System.Collections.ArrayList.Capacity
+  commentId: P:System.Collections.ArrayList.Capacity
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity
+  name: Capacity
+  nameWithType: ArrayList.Capacity
+  fullName: System.Collections.ArrayList.Capacity
+- uid: System.Collections.ArrayList.Count
+  commentId: P:System.Collections.ArrayList.Count
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count
+  name: Count
+  nameWithType: ArrayList.Count
+  fullName: System.Collections.ArrayList.Count
+- uid: System.Collections.ArrayList.IsFixedSize
+  commentId: P:System.Collections.ArrayList.IsFixedSize
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize
+  name: IsFixedSize
+  nameWithType: ArrayList.IsFixedSize
+  fullName: System.Collections.ArrayList.IsFixedSize
+- uid: System.Collections.ArrayList.IsReadOnly
+  commentId: P:System.Collections.ArrayList.IsReadOnly
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly
+  name: IsReadOnly
+  nameWithType: ArrayList.IsReadOnly
+  fullName: System.Collections.ArrayList.IsReadOnly
+- uid: System.Collections.ArrayList.IsSynchronized
+  commentId: P:System.Collections.ArrayList.IsSynchronized
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized
+  name: IsSynchronized
+  nameWithType: ArrayList.IsSynchronized
+  fullName: System.Collections.ArrayList.IsSynchronized
+- uid: System.Collections.ArrayList.Item(System.Int32)
+  commentId: P:System.Collections.ArrayList.Item(System.Int32)
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ArrayList.this[int]
+  fullName: System.Collections.ArrayList.this[int]
+  nameWithType.vb: ArrayList.this[](Integer)
+  fullName.vb: System.Collections.ArrayList.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.ArrayList.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ArrayList.SyncRoot
+  commentId: P:System.Collections.ArrayList.SyncRoot
+  parent: System.Collections.ArrayList
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot
+  name: SyncRoot
+  nameWithType: ArrayList.SyncRoot
+  fullName: System.Collections.ArrayList.SyncRoot
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Booseapp.AppStoredProgram
+  commentId: T:Booseapp.AppStoredProgram
+  href: Booseapp.AppStoredProgram.html
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram
+  fullName: Booseapp.AppStoredProgram
+- uid: Booseapp.AppStoredProgram.#ctor*
+  commentId: Overload:Booseapp.AppStoredProgram.#ctor
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram__ctor_BOOSE_ICanvas_
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram.AppStoredProgram
+  fullName: Booseapp.AppStoredProgram.AppStoredProgram
+  nameWithType.vb: AppStoredProgram.New
+  fullName.vb: Booseapp.AppStoredProgram.New
+  name.vb: New
+- uid: BOOSE.ICanvas
+  commentId: T:BOOSE.ICanvas
+  parent: BOOSE
+  isExternal: true
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSE.ICanvas
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Booseapp.AppStoredProgram.RegisterMethod*
+  commentId: Overload:Booseapp.AppStoredProgram.RegisterMethod
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_RegisterMethod_Booseapp_AppMethod_
+  name: RegisterMethod
+  nameWithType: AppStoredProgram.RegisterMethod
+  fullName: Booseapp.AppStoredProgram.RegisterMethod
+- uid: Booseapp.AppMethod
+  commentId: T:Booseapp.AppMethod
+  parent: Booseapp
+  href: Booseapp.AppMethod.html
+  name: AppMethod
+  nameWithType: AppMethod
+  fullName: Booseapp.AppMethod
+- uid: BOOSE.CommandException
+  commentId: T:BOOSE.CommandException
+  isExternal: true
+  name: CommandException
+  nameWithType: CommandException
+  fullName: BOOSE.CommandException
+- uid: Booseapp.AppStoredProgram.GetMethod*
+  commentId: Overload:Booseapp.AppStoredProgram.GetMethod
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_GetMethod_System_String_
+  name: GetMethod
+  nameWithType: AppStoredProgram.GetMethod
+  fullName: Booseapp.AppStoredProgram.GetMethod
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Booseapp.AppStoredProgram.PushMethodReturn*
+  commentId: Overload:Booseapp.AppStoredProgram.PushMethodReturn
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_PushMethodReturn_System_Int32_
+  name: PushMethodReturn
+  nameWithType: AppStoredProgram.PushMethodReturn
+  fullName: Booseapp.AppStoredProgram.PushMethodReturn
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Booseapp.AppStoredProgram.PopMethodReturn*
+  commentId: Overload:Booseapp.AppStoredProgram.PopMethodReturn
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_PopMethodReturn
+  name: PopMethodReturn
+  nameWithType: AppStoredProgram.PopMethodReturn
+  fullName: Booseapp.AppStoredProgram.PopMethodReturn
+- uid: Booseapp.AppStoredProgram.HasMethodReturn*
+  commentId: Overload:Booseapp.AppStoredProgram.HasMethodReturn
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_HasMethodReturn
+  name: HasMethodReturn
+  nameWithType: AppStoredProgram.HasMethodReturn
+  fullName: Booseapp.AppStoredProgram.HasMethodReturn
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Booseapp.AppReal
+  commentId: T:Booseapp.AppReal
+  href: Booseapp.AppReal.html
+  name: AppReal
+  nameWithType: AppReal
+  fullName: Booseapp.AppReal
+- uid: BOOSE.Real
+  commentId: T:BOOSE.Real
+  isExternal: true
+  name: Real
+  nameWithType: Real
+  fullName: BOOSE.Real
+- uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Double)
+  commentId: M:BOOSE.StoredProgram.UpdateVariable(System.String,System.Double)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: UpdateVariable(string, double)
+  nameWithType: StoredProgram.UpdateVariable(string, double)
+  fullName: BOOSE.StoredProgram.UpdateVariable(string, double)
+  nameWithType.vb: StoredProgram.UpdateVariable(String, Double)
+  fullName.vb: BOOSE.StoredProgram.UpdateVariable(String, Double)
+  name.vb: UpdateVariable(String, Double)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Double)
+    name: UpdateVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Double)
+    name: UpdateVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Booseapp.AppStoredProgram.UpdateVariable*
+  commentId: Overload:Booseapp.AppStoredProgram.UpdateVariable
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_UpdateVariable_System_String_System_Double_
+  name: UpdateVariable
+  nameWithType: AppStoredProgram.UpdateVariable
+  fullName: Booseapp.AppStoredProgram.UpdateVariable
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Int32)
+  commentId: M:BOOSE.StoredProgram.UpdateVariable(System.String,System.Int32)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: UpdateVariable(string, int)
+  nameWithType: StoredProgram.UpdateVariable(string, int)
+  fullName: BOOSE.StoredProgram.UpdateVariable(string, int)
+  nameWithType.vb: StoredProgram.UpdateVariable(String, Integer)
+  fullName.vb: BOOSE.StoredProgram.UpdateVariable(String, Integer)
+  name.vb: UpdateVariable(String, Integer)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Int32)
+    name: UpdateVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.UpdateVariable(System.String,System.Int32)
+    name: UpdateVariable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: BOOSE.StoredProgram.GetVarValue(System.String)
+  commentId: M:BOOSE.StoredProgram.GetVarValue(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetVarValue(string)
+  nameWithType: StoredProgram.GetVarValue(string)
+  fullName: BOOSE.StoredProgram.GetVarValue(string)
+  nameWithType.vb: StoredProgram.GetVarValue(String)
+  fullName.vb: BOOSE.StoredProgram.GetVarValue(String)
+  name.vb: GetVarValue(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.GetVarValue(System.String)
+    name: GetVarValue
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.GetVarValue(System.String)
+    name: GetVarValue
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Booseapp.AppStoredProgram.GetVarValue*
+  commentId: Overload:Booseapp.AppStoredProgram.GetVarValue
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_GetVarValue_System_String_
+  name: GetVarValue
+  nameWithType: AppStoredProgram.GetVarValue
+  fullName: Booseapp.AppStoredProgram.GetVarValue
+- uid: BOOSE.StoredProgram.EvaluateExpression(System.String)
+  commentId: M:BOOSE.StoredProgram.EvaluateExpression(System.String)
+  parent: BOOSE.StoredProgram
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: EvaluateExpression(string)
+  nameWithType: StoredProgram.EvaluateExpression(string)
+  fullName: BOOSE.StoredProgram.EvaluateExpression(string)
+  nameWithType.vb: StoredProgram.EvaluateExpression(String)
+  fullName.vb: BOOSE.StoredProgram.EvaluateExpression(String)
+  name.vb: EvaluateExpression(String)
+  spec.csharp:
+  - uid: BOOSE.StoredProgram.EvaluateExpression(System.String)
+    name: EvaluateExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.StoredProgram.EvaluateExpression(System.String)
+    name: EvaluateExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Booseapp.AppStoredProgram.EvaluateExpression*
+  commentId: Overload:Booseapp.AppStoredProgram.EvaluateExpression
+  href: Booseapp.AppStoredProgram.html#Booseapp_AppStoredProgram_EvaluateExpression_System_String_
+  name: EvaluateExpression
+  nameWithType: AppStoredProgram.EvaluateExpression
+  fullName: Booseapp.AppStoredProgram.EvaluateExpression
